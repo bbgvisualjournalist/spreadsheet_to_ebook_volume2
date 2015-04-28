@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="<%= global.book.config[0].languagecode %>" xml:lang="<%= global.book.config[0].languagecode %>">
+<head>
+	<% include partials/template/head.ejs %>
+	<title><%= title %></title>
+	<style type="text/css">
+		body{padding:20px 5%;}
+		#container{max-width: 800px; margin: 0 auto;}
+		.book{margin-bottom:30px;}
+		h1{font-family: sans-serif; text-align: left;}
+		.cover{width: 100px;float:left; margin-right:20px;}
+		.clearAll{clear:both;}
+	</style>
+</head>
+<body>
+<div id='container'>
+	<h1><%= title %></h1>
+	<p><strong>The metadata, titles, chapters, photos, captions and credits are being generated from this <a href='https://docs.google.com/spreadsheets/d/1dXbUkXlGb8GyVMdKpuJB__82MAI6-VWqhzcvq2A3rYY/pubhtml' target='_blank'>google spreadsheet</a>.</strong></p>
+	<br/>
+
+	<% for (var i=0; i<global.book.meta.length; i++){ %>
+		<div class='book'>
+		<h3><%=i + 1%>. <%= global.book.meta[i].booktitle %> | <%= global.book.meta[i].booktitleenglish %></h3>
+		<p><a href='/book/<%= i %>/bodymatter.xhtml'><img src='images/<%= cover[i] %>' class='cover'/></a>
+		<%= global.book.meta[i].descriptionenglish %></p>
+		<div class='clearAll'></div>
+		<ul id='book<%=i%>'>
+			<li><a href='/book/<%= i %>/content.opf'>content.opf</a></li>
+			<li><a href='/book/<%= i %>/cover.xhtml'>cover.xhtml</a></li>
+			<li><a href='/book/<%= i %>/toc.xhtml'>toc.xhtml</a></li>
+			<li><a href='/book/<%= i %>/titlepage.xhtml'>titlepage.xhtml</a></li>
+			<li><a href='/book/<%= i %>/introduction.xhtml'>introduction.xhtml</a></li>
+			<li><a href='/book/<%= i %>/bodymatter.xhtml'>bodymatter.xhtml</a></li>
+			<li><a href='/book/<%= i %>/backmatter.xhtml'>backmatter.xhtml</a></li>
+		</ul>
+		</div>
+	<% } %>
+</div>
+</body>
+</html>

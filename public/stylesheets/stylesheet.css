@@ -1,0 +1,229 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+}
+
+body {
+	font-family: "Adobe Heiti Std", sans-serif;
+	widows: 2;
+	orphans: 2;
+	margin: 0;
+	text-indent: 0;
+	/* This .Mobi7 hack is needed because that format automatically applies paragraph indents on all p classes */
+	-webkit-line-break: after-white-space;
+	-epub-line-break: strict;
+	line-break: strict;
+	-epub-word-break: keep-all !important;
+	-webkit-word-break: keep-all !important;
+	-moz-word-break: keep-all !important;
+	word-break: keep-all !important;
+	-webkit-hyphenate-lines: 0;
+	hyphenate-lines: 0;
+	-epub-hyphens: none !important;
+	-webkit-hyphens: none !important;
+	adobe-hyphenate: none !important;
+	-moz-hyphens: none !important;
+	hyphens: none !important;
+}
+@media (min-width:300px) {
+	body{padding:0 20px;}
+}
+/*Images*/
+svg {/*Wrapper for responsive scaling*/
+	width: 100%;/*Set proportional height based on image ratio in HTML*/
+	page-break-inside: avoid;
+	margin: 0;
+	padding: 0;
+}
+svg.full{
+	page-break-before: always;
+}
+
+rect {/*Border around images to delineate all borders*/
+	fill: none;
+	stroke-width: 1;
+	stroke: lightgray;
+	margin: 0;
+	padding: 0;
+}
+
+text {/*Use within SVG element for captions*/ 
+	font: 0.5em/0.6em "Hiragino Mincho Pro", serif;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+img, image {/*Make image responsive*/
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	border: solid 0.1em lightgray;
+	page-break-inside: avoid;
+}
+
+img.cover-image {
+	display: block;
+	border: 0;
+}
+
+/*Wrap this around headings + first paragraph of text to keep together on some e-readers*/
+.keeptext {
+	page-break-inside: avoid !important;
+	margin: 0 !important;
+}
+
+/*Headlines*/
+h1, h2, h3, h4, h5, h6 {
+	page-break-inside: avoid !important;
+	page-break-after: avoid !important;
+}
+
+h1 {
+	font: bold 2em/2.5em "Hiragino Mincho Pro", serif;
+	page-break-inside: avoid;
+	text-align: center;
+}
+
+h2 {
+	font: 1.5em/1.2em "Hiragino Mincho Pro", serif;
+	text-align: center;
+	margin: 0.5em 0 0.35em;
+}
+
+/*Use this span around other tags in XHTML to fix Apple/iBooks bug regarding centered text*/
+span.applebug {}
+
+/*Body Text*/
+p.first, h1 + p, h2 + p {
+	text-indent: 0;
+}
+
+/* First Paragraph not indented */
+p {
+	font: 0.9em/1.5em "Adobe Heiti Std", sans-serif;
+	margin-bottom: 0.35em;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.bridge {
+	font: 0.7em/2em "Adobe Heiti Std", sans-serif;
+	margin-bottom: 5em;
+}
+
+
+/*Replace blockquote tag with div to help with validation*/
+.pullout {
+	font: 1em/1.5em "Hiragino Mincho Pro", serif;
+	margin: 2em 1em;
+	padding: 0.5em;
+	border: dotted 1pt;
+	page-break-inside: avoid;
+}
+
+
+.announcement {
+	border: double 2pt;
+	margin: 2em 1em;
+	padding: 0.5em;
+	text-align: center;
+	page-break-inside: avoid;
+}
+/*Styling the speaker label span*/
+.speaker{font-weight: bold;}
+
+/*Endnote references*/
+sup {
+	font-size: 0.6em;
+	line-height: 0.5em;
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+
+/*Table of Contents lists*/
+li.toc-1, li.toc-2, li.toc-3 {
+	font: bold 1.15em/1.75em "Adobe Heiti Std", sans-serif;
+	list-style: none;
+}
+
+li.toc-2 {
+	margin-left:2em;
+}
+
+li.toc-3 {
+	margin-left:4em;
+}
+
+/*Endnotes lists*/
+ul.endnotes li {
+	font-size: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+#preface1, #preface2, #foreword, #start, #rearnotes, #afterword {
+	page-break-before: always;
+}
+
+
+
+
+/* ############################################# */
+/* ################### Images ################## */
+/* ############################################# */
+p#cover {
+	text-align: center;
+}
+img#coverimage {
+  padding: 0;
+  margin: 0;
+}
+
+/* ########### Captions ########### */
+p.caption {
+	text-align: center;
+	text-indent: 0;
+	font-weight: bold;
+	margin: 0 10%;
+}
+
+
+/* ########### Container ########### */
+div.img_fs_cap {
+	text-align: center;
+	margin: 0;
+	page-break-inside: avoid;
+}
+/* If you use figure, be sure to add display:block; for older reading systems */
+
+/* ########### Percentage ########### */
+img.percent {
+	height: 80%;
+	width: auto;
+}
+
+/* ########### Viewport ########### */
+img.viewport {
+	height: 70vh;
+}
+
+/* ########### Single File ########### */
+div.img_pct {
+	height: 80%;
+}
+img#img_vh {
+	height: 80%;
+}
+
+img#img_vh:only-of-type { /*overrides the previous setting, but only in newer systems that support CSS3 */
+	height: 80vh;
+}
+
+

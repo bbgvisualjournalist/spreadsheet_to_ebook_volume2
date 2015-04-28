@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="<%= global.book.config[0].languagecode %>">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Content-Language" content="<%= global.book.config[0].languagecode %>"/>
+    <meta name="dtb:uid" content="<%= global.book.meta[book].uuid %>"/>
+  </head>
+  <docTitle>
+    <text><%= global.book.meta[book].booktitle %></text>
+  </docTitle>
+  <navMap>
+    <navPoint id="preface" playOrder="1">
+      <navLabel>
+        <text>解密時刻─一斑窺豹</text>
+      </navLabel>
+      <content src="introduction.xhtml#preface1"/>
+    </navPoint>
+
+    <navPoint id="preface2" playOrder="2">
+      <navLabel>
+        <text>解密─令人心動的時刻</text>
+      </navLabel>
+      <content src="introduction.xhtml#preface2"/>
+    </navPoint>
+
+    <navPoint id="foreword" playOrder="3">
+      <navLabel>
+        <text>前言：解密《解密時刻》</text>
+      </navLabel>
+      <content src="introduction.xhtml#foreword"/>
+    </navPoint>
+
+
+    <% for (var i=0; i<global.book.chapters.length; i++){ %>
+      <% if (global.book.chapters[i].book - 1 == book){ %>
+        <navPoint id="<%= global.book.chapters[i].htmlid %>" playOrder="<%= parseInt(global.book.chapters[i].chapter) + 4 %>">
+          <navLabel>
+            <text><%= global.book.chapters[i].chaptertitle %></text>
+          </navLabel>
+          <content src="bodymatter.xhtml#<%= global.book.chapters[i].htmlid %>"/>
+        </navPoint><% } %><% } %>
+
+    <navPoint id="rearnotes" playOrder="<%= numberOfChapters + 4 %>">
+      <navLabel>
+        <text>註釋</text>
+      </navLabel>
+      <content src="backmatter.xhtml#rearnotes"/>
+    </navPoint>
+    <navPoint id="afterword" playOrder="<%= numberOfChapters + 5 %>">
+      <navLabel>
+        <text>編後語</text>
+      </navLabel>
+      <content src="backmatter.xhtml#afterword"/>
+    </navPoint>
+  </navMap>
+</ncx>

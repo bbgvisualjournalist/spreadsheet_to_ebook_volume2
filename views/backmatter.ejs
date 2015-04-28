@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="<%= global.book.config[0].languagecode %>" xml:lang="<%= global.book.config[0].languagecode %>">
+<head>
+	<% include partials/template/head.ejs %>
+	<title><%= global.book.meta[book].booktitle %></title>
+</head>
+<body>
+	<div epub:type="backmatter" id="backmatter">
+	<%- include(chapter) %>
+	</div>
+</body>
+</html>

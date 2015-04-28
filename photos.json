@@ -1,0 +1,382 @@
+[
+  {
+    "book": "1",
+    "imagenumber": "0",
+    "filename": "v2_1_cover.jpg",
+    "cutline": "cover photo",
+    "credit": "x",
+    "alttext": "x",
+    "textlocation": "",
+    "rowNumber": 1
+  },
+  {
+    "book": "1",
+    "imagenumber": "1",
+    "filename": "1_1_鄒雪平.jpg",
+    "cutline": "鄒雪平同學",
+    "credit": "(美國之音章明拍攝)",
+    "alttext": "",
+    "textlocation": "common with first 5 books",
+    "rowNumber": 2
+  },
+  {
+    "book": "1",
+    "imagenumber": "2",
+    "filename": "1_2_墓碑封面.jpg",
+    "cutline": "《墓碑：中國六十年代大饑荒紀實》封面",
+    "credit": "",
+    "alttext": "",
+    "textlocation": "common with first 5 books",
+    "rowNumber": 3
+  },
+  {
+    "book": "1",
+    "imagenumber": "3",
+    "filename": "1_3_杨继绳.jpg",
+    "cutline": "楊繼繩在辦公室",
+    "credit": "",
+    "alttext": "",
+    "textlocation": "common with first 5 books",
+    "rowNumber": 4
+  },
+  {
+    "book": "1",
+    "imagenumber": "4",
+    "filename": "1_4_三面紅旗畫.jpg",
+    "cutline": "三面紅旗宣傳畫",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 5
+  },
+  {
+    "book": "1",
+    "imagenumber": "5",
+    "filename": "1_5_大跃进遊行.jpg",
+    "cutline": "大躍進時期的遊行方陣",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 6
+  },
+  {
+    "book": "1",
+    "imagenumber": "6",
+    "filename": "1_6_二年超英.jpg",
+    "cutline": "毛澤東批示，在兩年內超過英國",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 7
+  },
+  {
+    "book": "1",
+    "imagenumber": "7",
+    "filename": "1_7_炼钢土高炉.jpg",
+    "cutline": "煉鋼土高爐",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 8
+  },
+  {
+    "book": "1",
+    "imagenumber": "8",
+    "filename": "1_8_農村高爐群.jpg",
+    "cutline": "農村到處可見的高爐群",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 9
+  },
+  {
+    "book": "1",
+    "imagenumber": "9",
+    "filename": "1_9_公共食堂分菜.jpg",
+    "cutline": "農村公共食堂給社員分菜",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 10
+  },
+  {
+    "book": "1",
+    "imagenumber": "10",
+    "filename": "1_10_宋庆龄炼钢.jpg",
+    "cutline": "宋慶齡參加大煉鋼鐵",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 11
+  },
+  {
+    "book": "1",
+    "imagenumber": "11",
+    "filename": "1_11_周恩来和陈毅煉鋼.jpg",
+    "cutline": "周恩来和陈毅在湖北麻城县五四人民公社凤凰窝钢铁厂參加煉鋼勞動",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 12
+  },
+  {
+    "book": "1",
+    "imagenumber": "12",
+    "filename": "1_12_南日宣傳吃饭不要钱.jpg",
+    "cutline": "南方日報宣傳吃飯不要錢",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 13
+  },
+  {
+    "book": "1",
+    "imagenumber": "13",
+    "filename": "1_13_放开肚皮吃饭.jpg",
+    "cutline": "一位農民在食堂門口大碗吃飯",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 14
+  },
+  {
+    "book": "1",
+    "imagenumber": "14",
+    "filename": "1_14_频频放卫星.jpg",
+    "cutline": "糧食衛星（“大躍進”時期的宣傳畫）",
+    "credit": "",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 15
+  },
+  {
+    "book": "1",
+    "imagenumber": "15",
+    "filename": "1_15_遂平县高产景象.jpg",
+    "cutline": "河南信陽地區遂平縣技術員測量莊家生長高度",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 16
+  },
+  {
+    "book": "1",
+    "imagenumber": "16",
+    "filename": "1_16_余德鸿談信阳事件.jpg",
+    "cutline": "余德鴻（已去世）講述當年的浮誇風",
+    "credit": "",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 17
+  },
+  {
+    "book": "1",
+    "imagenumber": "17",
+    "filename": "1_17_大饥荒饥民.jpg",
+    "cutline": "",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 18
+  },
+  {
+    "book": "1",
+    "imagenumber": "18",
+    "filename": "1_18_大饥荒中的饥民.jpg",
+    "cutline": "",
+    "credit": "",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 19
+  },
+  {
+    "book": "1",
+    "imagenumber": "19",
+    "filename": "1_19_大锅饭封面.jpg",
+    "cutline": "楊奎松專著《大鍋飯》封面",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 20
+  },
+  {
+    "book": "2",
+    "imagenumber": "0",
+    "filename": "v2_2_cover.jpg",
+    "cutline": "cover photo",
+    "credit": "x",
+    "alttext": "x",
+    "textlocation": "",
+    "rowNumber": 21
+  },
+  {
+    "book": "2",
+    "imagenumber": "1",
+    "filename": "1_1_鄒雪平.jpg",
+    "cutline": "鄒雪平同學",
+    "credit": "(美國之音章明拍攝)",
+    "alttext": "",
+    "textlocation": "common with first 5 books",
+    "rowNumber": 22
+  },
+  {
+    "book": "2",
+    "imagenumber": "2",
+    "filename": "1_2_墓碑封面.jpg",
+    "cutline": "《墓碑：中國六十年代大饑荒紀實》封面",
+    "credit": "",
+    "alttext": "",
+    "textlocation": "common with first 5 books",
+    "rowNumber": 23
+  },
+  {
+    "book": "2",
+    "imagenumber": "3",
+    "filename": "1_3_杨继绳.jpg",
+    "cutline": "楊繼繩在辦公室",
+    "credit": "",
+    "alttext": "",
+    "textlocation": "common with first 5 books",
+    "rowNumber": 24
+  },
+  {
+    "book": "2",
+    "imagenumber": "4",
+    "filename": "2_4_1960周恩来写信.jpg",
+    "cutline": "周恩來在寫信（1960年）",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 25
+  },
+  {
+    "book": "2",
+    "imagenumber": "5",
+    "filename": "2_5_周恩來給曾希聖的親筆信.jpg",
+    "cutline": "周恩來給安徽省委書記曾希聖的親筆信，要求调查安徽饑荒情况",
+    "credit": "",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 26
+  },
+  {
+    "book": "2",
+    "imagenumber": "6",
+    "filename": "2_6_廖伯康.jpg",
+    "cutline": "",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 27
+  },
+  {
+    "book": "2",
+    "imagenumber": "7",
+    "filename": "2_7_萧李廖.jpg",
+    "cutline": "",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 28
+  },
+  {
+    "book": "2",
+    "imagenumber": "8",
+    "filename": "2_8_李成瑞.jpg",
+    "cutline": "原中國國家統計局局長李成瑞",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 29
+  },
+  {
+    "book": "2",
+    "imagenumber": "9",
+    "filename": "2_9_Ansley-Coale.jpg",
+    "cutline": "美國著名人口學家安利斯·科爾",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 30
+  },
+  {
+    "book": "2",
+    "imagenumber": "10",
+    "filename": "2_10_馮克西裝.jpg",
+    "cutline": "荷蘭學者馮克",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 31
+  },
+  {
+    "book": "2",
+    "imagenumber": "11",
+    "filename": "2_11_湖南澧县父食子湖南澧县父食子.jpg",
+    "cutline": "湖南澧縣饑荒時發生的父食子照片",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 32
+  },
+  {
+    "book": "2",
+    "imagenumber": "12",
+    "filename": "2_12_宋永毅講話.jpg",
+    "cutline": "宋永毅教授",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 33
+  },
+  {
+    "book": "2",
+    "imagenumber": "13",
+    "filename": "2_13_斯诺.jpg",
+    "cutline": "埃德加·斯諾，美國記者",
+    "credit": "",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 34
+  },
+  {
+    "book": "2",
+    "imagenumber": "14",
+    "filename": "2_14_無知的帷幕封面.jpg",
+    "cutline": "無知的帷幕》封面，作者：英國記者格林",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 35
+  },
+  {
+    "book": "2",
+    "imagenumber": "15",
+    "filename": "2_15_逍遙津公園1.jpg",
+    "cutline": "安徽合肥的逍遙津公園",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 36
+  },
+  {
+    "book": "2",
+    "imagenumber": "16",
+    "filename": "2_16_饑民屍體.jpg",
+    "cutline": "倒斃的饑民",
+    "credit": "",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 37
+  },
+  {
+    "book": "2",
+    "imagenumber": "17",
+    "filename": "2_17_小球藻.jpg",
+    "cutline": "四川簡陽縣科委在1960年編印的小球藻培育手冊封面",
+    "credit": "(歷史照片)",
+    "alttext": "MISSING",
+    "textlocation": "",
+    "rowNumber": 38
+  }
+]

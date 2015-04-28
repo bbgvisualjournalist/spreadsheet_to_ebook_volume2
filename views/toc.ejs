@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="<%= global.book.config[0].languagecode %>" xml:lang="<%= global.book.config[0].languagecode %>">
+<head>
+	<% include partials/template/head.ejs %>
+	<title><%= global.book.meta[book].booktitle %></title>
+</head>
+<body>
+	<h2>目 錄 </h2>
+	<nav epub:type="toc" id="toc">
+		<ol>			
+			<li class="toc-1">
+				<a href="introduction.xhtml#preface1">解密時刻─一斑窺豹</a>
+			</li>
+			<li class="toc-1">
+				<a href="introduction.xhtml#preface2">解密─令人心動的時刻</a>
+			</li>
+			<li class="toc-1">
+				<a href="introduction.xhtml#foreword">前言：解密《解密時刻》</a>
+			</li>
+
+			<% for (var i=0; i<global.book.chapters.length; i++){ %>
+				<% if (global.book.chapters[i].book - 1 == book){ %>
+				<li class="toc-<%= global.book.chapters[i].indent%>">
+					<a href="bodymatter.xhtml#<%= global.book.chapters[i].htmlid %>"><%= global.book.chapters[i].chaptertitle %></a>
+				</li><% } %><% } %>
+
+			<li class="toc-1">
+				<a href="backmatter.xhtml#rearnotes">註釋</a>
+			</li>
+			<li class="toc-1">
+				<a href="backmatter.xhtml#afterword">編後語</a>
+			</li>
+		</ol>
+	</nav>
+
+	<nav epub:type="landmarks" hidden="hidden">
+		<h2>目 錄</h2>
+		<ol>
+			<li>
+				<a epub:type="cover" href="cover.xhtml">逃離朝鮮 亡命中國</a>
+			</li>
+			<li>
+				<a epub:type="toc" href="#toc">目 錄</a>
+			</li>
+			<li>
+				<a epub:type="frontmatter" href="titlepage.xhtml#frontmatter">解密時刻─一斑窺豹</a>
+			</li>
+			<li>
+				<a epub:type="bodymatter" href="bodymatter.xhtml#bodymatter">逃離朝鮮 亡命中國</a>
+			</li>
+			<li>
+				<a epub:type="backmatter" href="backmatter.xhtml#backmatter">註釋</a>
+			</li>
+		</ol>
+	</nav>
+</body>
+</html>
