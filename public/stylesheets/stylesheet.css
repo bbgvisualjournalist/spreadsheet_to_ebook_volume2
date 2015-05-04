@@ -139,6 +139,9 @@ a {
 /*Styling the speaker label span*/
 .speaker{font-weight: bold;}
 
+/*Styling commentary VO*/
+.commentary{font-style: italic;}
+
 /*Endnote references*/
 sup {
 	font-size: 0.6em;
