@@ -101,7 +101,7 @@
   {
     "book": "2",
     "chapter": "0",
-    "chaptertitle": "豎起生命的紀念碑",
+    "chaptertitle": "",
     "chaptertitleenglish": "",
     "htmlid": "start",
     "indent": "1",
@@ -187,5 +187,320 @@
     "htmlid": "part9",
     "indent": "2",
     "rowNumber": 21
+  },
+  {
+    "book": "3",
+    "chapter": "0",
+    "chaptertitle": "豎起生命的紀念碑",
+    "chaptertitleenglish": "",
+    "htmlid": "start",
+    "indent": "1",
+    "rowNumber": 22
+  },
+  {
+    "book": "3",
+    "chapter": "1",
+    "chaptertitle": "三  誰騙誰",
+    "chaptertitleenglish": "",
+    "htmlid": "part1",
+    "indent": "2",
+    "rowNumber": 23
+  },
+  {
+    "book": "3",
+    "chapter": "2",
+    "chaptertitle": "省委書記的膽量：隱瞞災情，扣壓最高指示",
+    "chaptertitleenglish": "",
+    "htmlid": "part2",
+    "indent": "2",
+    "rowNumber": 24
+  },
+  {
+    "book": "3",
+    "chapter": "3",
+    "chaptertitle": "在謊言世界裡，誰說實話誰挨整",
+    "chaptertitleenglish": "",
+    "htmlid": "part3",
+    "indent": "",
+    "rowNumber": 25
+  },
+  {
+    "book": "3",
+    "chapter": "4",
+    "chaptertitle": "五風肆虐，誠信滅跡",
+    "chaptertitleenglish": "",
+    "htmlid": "part4",
+    "indent": "2",
+    "rowNumber": 26
+  },
+  {
+    "book": "3",
+    "chapter": "5",
+    "chaptertitle": "大科學家宣揚偽科學",
+    "chaptertitleenglish": "",
+    "htmlid": "part5",
+    "indent": "2",
+    "rowNumber": 27
+  },
+  {
+    "book": "3",
+    "chapter": "6",
+    "chaptertitle": "鄧子恢因保守被撤職",
+    "chaptertitleenglish": "",
+    "htmlid": "part6",
+    "indent": "2",
+    "rowNumber": 28
+  },
+  {
+    "book": "3",
+    "chapter": "7",
+    "chaptertitle": "一張餅就可誘姦婦女",
+    "chaptertitleenglish": "",
+    "htmlid": "part7",
+    "indent": "2",
+    "rowNumber": 29
+  },
+  {
+    "book": "3",
+    "chapter": "8",
+    "chaptertitle": "人民公僕：吃著雞鴨魚肉，談論百萬餓殍",
+    "chaptertitleenglish": "",
+    "htmlid": "part8",
+    "indent": "2",
+    "rowNumber": 30
+  },
+  {
+    "book": "3",
+    "chapter": "9",
+    "chaptertitle": "面對饑荒，中央堅持徵購標準不變",
+    "chaptertitleenglish": "",
+    "htmlid": "part9",
+    "indent": "2",
+    "rowNumber": 31
+  },
+  {
+    "book": "6",
+    "chapter": "0",
+    "chaptertitle": "是是非非周恩來",
+    "chaptertitleenglish": "",
+    "htmlid": "start",
+    "indent": "1",
+    "rowNumber": 32
+  },
+  {
+    "book": "6",
+    "chapter": "1",
+    "chaptertitle": "一 保與不保的匠心獨運",
+    "chaptertitleenglish": "",
+    "htmlid": "part1",
+    "indent": "2",
+    "rowNumber": 33
+  },
+  {
+    "book": "6",
+    "chapter": "2",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part2",
+    "indent": "2",
+    "rowNumber": 34
+  },
+  {
+    "book": "6",
+    "chapter": "3",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part3",
+    "indent": "2",
+    "rowNumber": 35
+  },
+  {
+    "book": "6",
+    "chapter": "4",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part4",
+    "indent": "2",
+    "rowNumber": 36
+  },
+  {
+    "book": "6",
+    "chapter": "5",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part5",
+    "indent": "2",
+    "rowNumber": 37
+  },
+  {
+    "book": "6",
+    "chapter": "6",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part6",
+    "indent": "2",
+    "rowNumber": 38
+  },
+  {
+    "book": "6",
+    "chapter": "7",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part7",
+    "indent": "2",
+    "rowNumber": 39
+  },
+  {
+    "book": "6",
+    "chapter": "8",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part8",
+    "indent": "2",
+    "rowNumber": 40
+  },
+  {
+    "book": "6",
+    "chapter": "9",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part9",
+    "indent": "2",
+    "rowNumber": 41
+  },
+  {
+    "book": "6",
+    "chapter": "10",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part10",
+    "indent": "2",
+    "rowNumber": 42
+  },
+  {
+    "book": "6",
+    "chapter": "11",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part11",
+    "indent": "2",
+    "rowNumber": 43
+  },
+  {
+    "book": "6",
+    "chapter": "12",
+    "chaptertitle": "",
+    "chaptertitleenglish": "",
+    "htmlid": "part12",
+    "indent": "2",
+    "rowNumber": 44
+  },
+  {
+    "book": "4",
+    "chapter": "0",
+    "chaptertitle": "四  中共高層與大饑荒",
+    "chaptertitleenglish": "",
+    "htmlid": "part0",
+    "indent": "1",
+    "rowNumber": 45
+  },
+  {
+    "book": "4",
+    "chapter": "1",
+    "chaptertitle": "周恩來下令銷毀死人數據",
+    "chaptertitleenglish": "",
+    "htmlid": "part1",
+    "indent": "2",
+    "rowNumber": 46
+  },
+  {
+    "book": "4",
+    "chapter": "2",
+    "chaptertitle": "欺上瞞下常態化",
+    "chaptertitleenglish": "",
+    "htmlid": "part2",
+    "indent": "2",
+    "rowNumber": 47
+  },
+  {
+    "book": "4",
+    "chapter": "3",
+    "chaptertitle": "信陽催糧路遇餓殍，李先念下車失聲痛哭",
+    "chaptertitleenglish": "",
+    "htmlid": "part3",
+    "indent": "2",
+    "rowNumber": 48
+  },
+  {
+    "book": "4",
+    "chapter": "4",
+    "chaptertitle": "“寧可四川餓死人，不可北京餓死人”",
+    "chaptertitleenglish": "",
+    "htmlid": "part4",
+    "indent": "2",
+    "rowNumber": 49
+  },
+  {
+    "book": "4",
+    "chapter": "5",
+    "chaptertitle": "鄧小平庇護李井泉",
+    "chaptertitleenglish": "",
+    "htmlid": "part5",
+    "indent": "2",
+    "rowNumber": 50
+  },
+  {
+    "book": "4",
+    "chapter": "6",
+    "chaptertitle": "蹲點調查，劉少奇立場大轉變",
+    "chaptertitleenglish": "",
+    "htmlid": "part6",
+    "indent": "2",
+    "rowNumber": 51
+  },
+  {
+    "book": "4",
+    "chapter": "7",
+    "chaptertitle": "毛澤東對公共食堂情有獨鍾",
+    "chaptertitleenglish": "",
+    "htmlid": "part7",
+    "indent": "2",
+    "rowNumber": 52
+  },
+  {
+    "book": "4",
+    "chapter": "8",
+    "chaptertitle": "毛澤東的唯意志論情結",
+    "chaptertitleenglish": "",
+    "htmlid": "part8",
+    "indent": "2",
+    "rowNumber": 53
+  },
+  {
+    "book": "4",
+    "chapter": "9",
+    "chaptertitle": "大饑荒與國民黨何干？",
+    "chaptertitleenglish": "",
+    "htmlid": "part9",
+    "indent": "2",
+    "rowNumber": 54
+  },
+  {
+    "book": "4",
+    "chapter": "10",
+    "chaptertitle": "毛澤東如何與民共渡時艱？",
+    "chaptertitleenglish": "",
+    "htmlid": "part10",
+    "indent": "2",
+    "rowNumber": 55
+  },
+  {
+    "book": "4",
+    "chapter": "11",
+    "chaptertitle": "附錄：毛澤東的作文《心之力》全文：",
+    "chaptertitleenglish": "",
+    "htmlid": "part11",
+    "indent": "3",
+    "rowNumber": 56
   }
 ]
