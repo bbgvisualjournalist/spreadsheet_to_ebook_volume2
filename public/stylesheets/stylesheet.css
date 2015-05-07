@@ -128,7 +128,7 @@ a {
 	page-break-inside: avoid;
 }
 
-
+/*Styling for large breakout boxes*/
 .announcement {
 	border: double 2pt;
 	margin: 2em 1em;
@@ -136,6 +136,9 @@ a {
 	text-align: center;
 	page-break-inside: avoid;
 }
+
+.right{text-align: right;}
+
 /*Styling the speaker label span*/
 .speaker{font-weight: bold;}
 
