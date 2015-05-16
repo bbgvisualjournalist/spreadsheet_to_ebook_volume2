@@ -110,8 +110,39 @@ router.get('/book/:bookNum/toc.xhtml', function(req, res, next) {
 		pathMode = ''
 	}
 
+	//Create a custom object for each book.
+	var currentBook = [];
+	console.log('Isolating this book.')
+	for (var i=0; i<global.book.chapters.length; i++){
+		if (global.book.chapters[i].book - 1 == bookNumber){
+			currentBook.push(global.book.chapters[i]);
+		}
+	}
+
+	//split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
+	console.log('Splitting the book into chapters.')
+	var currentChapter = 1;
+	var chapters = [];
+	var chapter =[];
+	var book = []
+	for (i=1; i<currentBook.length; i++){
+		if (currentBook[i].chapter == currentChapter){
+			chapter.push(currentBook[i])
+		}else{
+			chapters.push(chapter);
+			currentChapter++;
+			chapter = [];
+			chapter.push(currentBook[i]);
+		}
+	}
+	chapters.push(chapter);
+	console.log(chapters);
+
+
 	res.render('toc', { 
 		book: bookNumber,
+		bookIntro: currentBook[0],
+		chapters: chapters,
 		pathPrefix: pathMode
 	});
 });
