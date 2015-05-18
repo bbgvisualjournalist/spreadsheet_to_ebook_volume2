@@ -178,9 +178,6 @@ ul.endnotes li {
 	page-break-before: always;
 }
 
-
-
-
 /* ############################################# */
 /* ################### Images ################## */
 /* ############################################# */
@@ -232,4 +229,34 @@ img#img_vh:only-of-type { /*overrides the previous setting, but only in newer sy
 	height: 80vh;
 }
 
+/* ############################################# */
+/* ################### Tables ################## */
+/* ############################################# */
+table, tr {
+  border: 1px solid black;
+  width: 100%;
+  text-align: right;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
+}
 
+caption {
+  font: 0.9em/1.5em bold "Hiragino Mincho Pro", serif;
+}
+
+tr.header {
+  background: #333;
+  color: white;
+}
+
+tr.odd, tr.total {
+  background: #ccc;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.total {
+  font-weight: bold;
+}
