@@ -1,7 +1,7 @@
 [
   {
     "book": "1",
-    "chapter": "0.1",
+    "chapter": "0",
     "subchapter": "0",
     "chaptertitle": "豎起生命的紀念碑",
     "chaptertitleenglish": "",
@@ -22,7 +22,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "2",
+    "subchapter": "1",
     "chaptertitle": "“大躍進”導致大倒退",
     "chaptertitleenglish": "",
     "htmlid": "part1",
@@ -32,7 +32,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "3",
+    "subchapter": "2",
     "chaptertitle": "瞎指揮，國家經濟亂了套",
     "chaptertitleenglish": "",
     "htmlid": "part2",
@@ -42,7 +42,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "4",
+    "subchapter": "3",
     "chaptertitle": "浮誇衛星上天，饑民坐以待斃",
     "chaptertitleenglish": "",
     "htmlid": "part3",
@@ -52,7 +52,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "5",
+    "subchapter": "4",
     "chaptertitle": "公共食堂，觸發災難的最後一擊",
     "chaptertitleenglish": "",
     "htmlid": "part4",
@@ -62,7 +62,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "6",
+    "subchapter": "5",
     "chaptertitle": "中央通令堵盲流，饑民生路被阻斷",
     "chaptertitleenglish": "",
     "htmlid": "part5",
@@ -72,7 +72,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "7",
+    "subchapter": "6",
     "chaptertitle": "哀鴻遍千里，糧倉無人開",
     "chaptertitleenglish": "",
     "htmlid": "part6",
@@ -82,7 +82,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "8",
+    "subchapter": "7",
     "chaptertitle": "饑荒三年風調雨順，歸罪老天有失公允",
     "chaptertitleenglish": "",
     "htmlid": "part7",
@@ -92,7 +92,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "9",
+    "subchapter": "8",
     "chaptertitle": "蘇聯逼債子虛烏有，雪中送炭難能可貴",
     "chaptertitleenglish": "",
     "htmlid": "part8",
@@ -102,7 +102,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "10",
+    "subchapter": "9",
     "chaptertitle": "餓殍載道阻不住糧食外援創新高",
     "chaptertitleenglish": "",
     "htmlid": "part9",
@@ -112,7 +112,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "1",
+    "subchapter": "0",
     "chaptertitle": "二  死人不是數字遊戲",
     "chaptertitleenglish": "",
     "htmlid": "start",
@@ -122,7 +122,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "2",
+    "subchapter": "1",
     "chaptertitle": "重災區死人六之有一",
     "chaptertitleenglish": "",
     "htmlid": "part1",
@@ -132,7 +132,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "3",
+    "subchapter": "2",
     "chaptertitle": "死亡數字的來歷",
     "chaptertitleenglish": "",
     "htmlid": "part2",
@@ -142,7 +142,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "4",
+    "subchapter": "3",
     "chaptertitle": "饑荒比戰爭兇殘百倍",
     "chaptertitleenglish": "",
     "htmlid": "part3",
@@ -152,7 +152,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "5",
+    "subchapter": "4",
     "chaptertitle": "人吃人—並非傳說",
     "chaptertitleenglish": "",
     "htmlid": "part4",
@@ -162,7 +162,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "6",
+    "subchapter": "5",
     "chaptertitle": "封鎖饑荒消息 拒絕外國援助",
     "chaptertitleenglish": "",
     "htmlid": "part5",
@@ -172,7 +172,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "7",
+    "subchapter": "6",
     "chaptertitle": "“餓死”與“病死”之間的奧秘",
     "chaptertitleenglish": "",
     "htmlid": "part6",
@@ -182,7 +182,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "8",
+    "subchapter": "7",
     "chaptertitle": "糧食分配，農民總在隊尾",
     "chaptertitleenglish": "",
     "htmlid": "part7",
@@ -192,7 +192,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "9",
+    "subchapter": "8",
     "chaptertitle": "高層秘密決定：犧牲農村，保證城市",
     "chaptertitleenglish": "",
     "htmlid": "part8",
@@ -236,7 +236,7 @@
     "chaptertitle": "五風肆虐，誠信滅跡",
     "chaptertitleenglish": "",
     "htmlid": "part3",
-    "indent": "",
+    "indent": "2",
     "rowNumber": 24
   },
   {
@@ -291,13 +291,23 @@
   },
   {
     "book": "1",
+    "chapter": "3",
+    "subchapter": "9",
+    "chaptertitle": "附錄：給六級幹部的公開信（毛澤東）",
+    "chaptertitleenglish": "",
+    "htmlid": "part9",
+    "indent": "2",
+    "rowNumber": 30
+  },
+  {
+    "book": "1",
     "chapter": "4",
     "subchapter": "0",
     "chaptertitle": "四  中共高層與大饑荒",
     "chaptertitleenglish": "",
-    "htmlid": "part0",
+    "htmlid": "start",
     "indent": "1",
-    "rowNumber": 30
+    "rowNumber": 31
   },
   {
     "book": "1",
@@ -307,7 +317,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part1",
     "indent": "2",
-    "rowNumber": 31
+    "rowNumber": 32
   },
   {
     "book": "1",
@@ -317,7 +327,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part2",
     "indent": "2",
-    "rowNumber": 32
+    "rowNumber": 33
   },
   {
     "book": "1",
@@ -327,7 +337,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part3",
     "indent": "2",
-    "rowNumber": 33
+    "rowNumber": 34
   },
   {
     "book": "1",
@@ -337,7 +347,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part4",
     "indent": "2",
-    "rowNumber": 34
+    "rowNumber": 35
   },
   {
     "book": "1",
@@ -347,7 +357,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part5",
     "indent": "2",
-    "rowNumber": 35
+    "rowNumber": 36
   },
   {
     "book": "1",
@@ -357,7 +367,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part6",
     "indent": "2",
-    "rowNumber": 36
+    "rowNumber": 37
   },
   {
     "book": "1",
@@ -367,7 +377,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part7",
     "indent": "2",
-    "rowNumber": 37
+    "rowNumber": 38
   },
   {
     "book": "1",
@@ -377,7 +387,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part8",
     "indent": "2",
-    "rowNumber": 38
+    "rowNumber": 39
   },
   {
     "book": "1",
@@ -387,7 +397,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part9",
     "indent": "2",
-    "rowNumber": 39
+    "rowNumber": 40
   },
   {
     "book": "1",
@@ -397,7 +407,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part10",
     "indent": "2",
-    "rowNumber": 40
+    "rowNumber": 41
   },
   {
     "book": "1",
@@ -407,7 +417,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part11",
     "indent": "3",
-    "rowNumber": 41
+    "rowNumber": 42
   },
   {
     "book": "1",
@@ -415,9 +425,9 @@
     "subchapter": "0",
     "chaptertitle": "五  誰該為數千萬條生命負責？",
     "chaptertitleenglish": "",
-    "htmlid": "part0",
+    "htmlid": "start",
     "indent": "1",
-    "rowNumber": 42
+    "rowNumber": 43
   },
   {
     "book": "1",
@@ -427,7 +437,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part1",
     "indent": "2",
-    "rowNumber": 43
+    "rowNumber": 44
   },
   {
     "book": "1",
@@ -437,7 +447,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part2",
     "indent": "2",
-    "rowNumber": 44
+    "rowNumber": 45
   },
   {
     "book": "1",
@@ -447,7 +457,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part3",
     "indent": "2",
-    "rowNumber": 45
+    "rowNumber": 46
   },
   {
     "book": "1",
@@ -457,7 +467,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part4",
     "indent": "2",
-    "rowNumber": 46
+    "rowNumber": 47
   },
   {
     "book": "1",
@@ -467,7 +477,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part5",
     "indent": "2",
-    "rowNumber": 47
+    "rowNumber": 48
   },
   {
     "book": "1",
@@ -477,7 +487,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part6",
     "indent": "2",
-    "rowNumber": 48
+    "rowNumber": 49
   },
   {
     "book": "1",
@@ -487,7 +497,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part7",
     "indent": "2",
-    "rowNumber": 49
+    "rowNumber": 50
   },
   {
     "book": "1",
@@ -497,17 +507,17 @@
     "chaptertitleenglish": "",
     "htmlid": "part8",
     "indent": "2",
-    "rowNumber": 50
+    "rowNumber": 51
   },
   {
     "book": "2",
-    "chapter": "0.1",
+    "chapter": "0",
     "subchapter": "0",
     "chaptertitle": "是是非非周恩來",
     "chaptertitleenglish": "",
     "htmlid": "start",
     "indent": "1",
-    "rowNumber": 51
+    "rowNumber": 52
   },
   {
     "book": "2",
@@ -517,7 +527,7 @@
     "chaptertitleenglish": "",
     "htmlid": "start",
     "indent": "1",
-    "rowNumber": 52
+    "rowNumber": 53
   },
   {
     "book": "2",
@@ -527,7 +537,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part1",
     "indent": "2",
-    "rowNumber": 53
+    "rowNumber": 54
   },
   {
     "book": "2",
@@ -537,7 +547,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part2",
     "indent": "2",
-    "rowNumber": 54
+    "rowNumber": 55
   },
   {
     "book": "2",
@@ -547,7 +557,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part3",
     "indent": "2",
-    "rowNumber": 55
+    "rowNumber": 56
   },
   {
     "book": "2",
@@ -557,7 +567,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part4",
     "indent": "2",
-    "rowNumber": 56
+    "rowNumber": 57
   },
   {
     "book": "2",
@@ -567,7 +577,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part5",
     "indent": "2",
-    "rowNumber": 57
+    "rowNumber": 58
   },
   {
     "book": "2",
@@ -577,7 +587,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part6",
     "indent": "2",
-    "rowNumber": 58
+    "rowNumber": 59
   },
   {
     "book": "2",
@@ -587,17 +597,17 @@
     "chaptertitleenglish": "",
     "htmlid": "part7",
     "indent": "2",
-    "rowNumber": 59
+    "rowNumber": 60
   },
   {
     "book": "2",
     "chapter": "1",
     "subchapter": "8",
-    "chaptertitle": "附錄：姚監復專稿",
+    "chaptertitle": " 附錄：周恩來指使造反派打陳雲保李先念（姚監復）",
     "chaptertitleenglish": "",
     "htmlid": "part8",
     "indent": "2",
-    "rowNumber": 60
+    "rowNumber": 61
   },
   {
     "book": "2",
@@ -605,9 +615,9 @@
     "subchapter": "0",
     "chaptertitle": "二 忍與不忍的權衡標準",
     "chaptertitleenglish": "",
-    "htmlid": "part0",
+    "htmlid": "start",
     "indent": "1",
-    "rowNumber": 61
+    "rowNumber": 62
   },
   {
     "book": "2",
@@ -617,7 +627,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part1",
     "indent": "2",
-    "rowNumber": 62
+    "rowNumber": 63
   },
   {
     "book": "2",
@@ -627,7 +637,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part2",
     "indent": "2",
-    "rowNumber": 63
+    "rowNumber": 64
   },
   {
     "book": "2",
@@ -637,7 +647,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part3",
     "indent": "2",
-    "rowNumber": 64
+    "rowNumber": 65
   },
   {
     "book": "2",
@@ -647,7 +657,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part4",
     "indent": "2",
-    "rowNumber": 65
+    "rowNumber": 66
   },
   {
     "book": "2",
@@ -657,7 +667,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part5",
     "indent": "2",
-    "rowNumber": 66
+    "rowNumber": 67
   },
   {
     "book": "2",
@@ -667,7 +677,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part6",
     "indent": "2",
-    "rowNumber": 67
+    "rowNumber": 68
   },
   {
     "book": "2",
@@ -677,7 +687,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part7",
     "indent": "2",
-    "rowNumber": 68
+    "rowNumber": 69
   },
   {
     "book": "2",
@@ -687,7 +697,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part8",
     "indent": "2",
-    "rowNumber": 69
+    "rowNumber": 70
   },
   {
     "book": "2",
@@ -697,7 +707,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part9",
     "indent": "2",
-    "rowNumber": 70
+    "rowNumber": 71
   },
   {
     "book": "2",
@@ -707,7 +717,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part10",
     "indent": "2",
-    "rowNumber": 71
+    "rowNumber": 72
   },
   {
     "book": "2",
@@ -717,7 +727,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part11",
     "indent": "2",
-    "rowNumber": 72
+    "rowNumber": 73
   },
   {
     "book": "2",
@@ -727,7 +737,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part12",
     "indent": "2",
-    "rowNumber": 73
+    "rowNumber": 74
   },
   {
     "book": "2",
@@ -737,7 +747,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part13",
     "indent": "2",
-    "rowNumber": 74
+    "rowNumber": 75
   },
   {
     "book": "2",
@@ -747,7 +757,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part14",
     "indent": "2",
-    "rowNumber": 75
+    "rowNumber": 76
   },
   {
     "book": "2",
@@ -757,17 +767,17 @@
     "chaptertitleenglish": "",
     "htmlid": "part15",
     "indent": "2",
-    "rowNumber": 76
+    "rowNumber": 77
   },
   {
     "book": "3",
-    "chapter": "0.1",
+    "chapter": "0",
     "subchapter": "0",
     "chaptertitle": "中國禁書",
     "chaptertitleenglish": "",
     "htmlid": "start",
     "indent": "1",
-    "rowNumber": 77
+    "rowNumber": 78
   },
   {
     "book": "3",
@@ -775,9 +785,9 @@
     "subchapter": "0",
     "chaptertitle": "一  禁不住的真相",
     "chaptertitleenglish": "",
-    "htmlid": "part0",
+    "htmlid": "start",
     "indent": "1",
-    "rowNumber": 78
+    "rowNumber": 79
   },
   {
     "book": "3",
@@ -787,7 +797,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part1",
     "indent": "2",
-    "rowNumber": 79
+    "rowNumber": 80
   },
   {
     "book": "3",
@@ -797,7 +807,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part2",
     "indent": "2",
-    "rowNumber": 80
+    "rowNumber": 81
   },
   {
     "book": "3",
@@ -807,7 +817,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part3",
     "indent": "2",
-    "rowNumber": 81
+    "rowNumber": 82
   },
   {
     "book": "3",
@@ -817,7 +827,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part4",
     "indent": "2",
-    "rowNumber": 82
+    "rowNumber": 83
   },
   {
     "book": "3",
@@ -827,7 +837,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part5",
     "indent": "2",
-    "rowNumber": 83
+    "rowNumber": 84
   },
   {
     "book": "3",
@@ -837,7 +847,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part6",
     "indent": "2",
-    "rowNumber": 84
+    "rowNumber": 85
   },
   {
     "book": "3",
@@ -847,7 +857,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part7",
     "indent": "2",
-    "rowNumber": 85
+    "rowNumber": 86
   },
   {
     "book": "3",
@@ -857,7 +867,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part8",
     "indent": "2",
-    "rowNumber": 86
+    "rowNumber": 87
   },
   {
     "book": "3",
@@ -867,7 +877,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part9",
     "indent": "2",
-    "rowNumber": 87
+    "rowNumber": 88
   },
   {
     "book": "3",
@@ -877,7 +887,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part10",
     "indent": "2",
-    "rowNumber": 88
+    "rowNumber": 89
   },
   {
     "book": "3",
@@ -887,7 +897,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part11",
     "indent": "2",
-    "rowNumber": 89
+    "rowNumber": 90
   },
   {
     "book": "3",
@@ -897,7 +907,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part12",
     "indent": "2",
-    "rowNumber": 90
+    "rowNumber": 91
   },
   {
     "book": "3",
@@ -907,7 +917,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part13",
     "indent": "2",
-    "rowNumber": 91
+    "rowNumber": 92
   },
   {
     "book": "3",
@@ -915,9 +925,9 @@
     "subchapter": "0",
     "chaptertitle": "二 禁書逸聞軼事",
     "chaptertitleenglish": "",
-    "htmlid": "part0",
+    "htmlid": "start",
     "indent": "1",
-    "rowNumber": 92
+    "rowNumber": 93
   },
   {
     "book": "3",
@@ -927,7 +937,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part1",
     "indent": "2",
-    "rowNumber": 93
+    "rowNumber": 94
   },
   {
     "book": "3",
@@ -937,7 +947,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part2",
     "indent": "2",
-    "rowNumber": 94
+    "rowNumber": 95
   },
   {
     "book": "3",
@@ -947,7 +957,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part3",
     "indent": "2",
-    "rowNumber": 95
+    "rowNumber": 96
   },
   {
     "book": "3",
@@ -957,7 +967,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part4",
     "indent": "2",
-    "rowNumber": 96
+    "rowNumber": 97
   },
   {
     "book": "3",
@@ -967,7 +977,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part5",
     "indent": "2",
-    "rowNumber": 97
+    "rowNumber": 98
   },
   {
     "book": "3",
@@ -977,7 +987,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part6",
     "indent": "2",
-    "rowNumber": 98
+    "rowNumber": 99
   },
   {
     "book": "3",
@@ -987,7 +997,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part7",
     "indent": "2",
-    "rowNumber": 99
+    "rowNumber": 100
   },
   {
     "book": "3",
@@ -997,7 +1007,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part8",
     "indent": "2",
-    "rowNumber": 100
+    "rowNumber": 101
   },
   {
     "book": "3",
@@ -1007,7 +1017,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part9",
     "indent": "2",
-    "rowNumber": 101
+    "rowNumber": 102
   },
   {
     "book": "3",
@@ -1017,7 +1027,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part10",
     "indent": "2",
-    "rowNumber": 102
+    "rowNumber": 103
   },
   {
     "book": "3",
@@ -1027,7 +1037,7 @@
     "chaptertitleenglish": "",
     "htmlid": "part11",
     "indent": "2",
-    "rowNumber": 103
+    "rowNumber": 104
   },
   {
     "book": "3",
@@ -1037,6 +1047,6 @@
     "chaptertitleenglish": "",
     "htmlid": "part12",
     "indent": "2",
-    "rowNumber": 104
+    "rowNumber": 105
   }
 ]
