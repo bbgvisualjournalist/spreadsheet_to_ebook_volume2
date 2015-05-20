@@ -202,10 +202,9 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 
 	var titles_array = [];
 	var body_array = [];
-	//var intros = "partials/content/book" + (bookNumber + 1) + "_overview.ejs";
+	var intro_array = [];
 	var photos_array = [];
 	var chapters_array = [];
-
 
 	//edit this for exporting to epub so that paths match up
 	//specifically for head.js with the CSS
@@ -213,14 +212,6 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	var pathMode = '../../';
 	if (mode == 'export') {
 		pathMode = ''
-	}
-
-	//create code snippets for each photo, alt tag, caption and credit.
-	for (var i = 0; i < global.book.photos.length; i++) {
-		if (bookNumber + 1 == global.book.photos[i].book) {
-			var photo = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
-			photos_array.push(photo);
-		}
 	}
 
 	//create an array of book titles
@@ -259,6 +250,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	chapters.push(chapter);
 	//console.log(chapters);
 	
+	//loop through all the objects in the chapters array
 	for (i = 0; i < chapters.length; i++) {
 		for (y = 0; y < chapters[i].length; y++) {
 			//populate array of the chapter titles
@@ -273,8 +265,17 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 		//console.log(i + ": " + body_array[i]);
 	}
 
-	console.log(chapters_array.length);
+	//console.log(chapters_array.length);
 	//console.log(body_array);
+
+	//create code snippets for each photo, alt tag, caption and credit.
+	for (var i = 0; i < global.book.photos.length; i++) {
+		if (bookNumber + 1 == global.book.photos[i].book) {
+			var photo = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
+			photos_array.push(photo);
+		}
+	}
+	console.log(photos_array);
 
 	res.render('bodymatter', {
 		book: bookNumber,
