@@ -248,13 +248,14 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	}
 
 	chapters.push(chapter);
-	//console.log(chapters);
+	console.log(chapters[0][0].chaptertitle);
 	
 	//loop through all the objects in the chapters array
 	for (i = 0; i < chapters.length; i++) {
 		for (y = 0; y < chapters[i].length; y++) {
-			//populate array of the chapter titles
+			//populate array of chapter titles
 			chapters_array.push(chapters[i][y].chaptertitle);
+			//populate array of title anchor tags for toc
 			chapterID_array.push(chapters[i][y].htmlid);
 			//create code snippets for each chapter's content
 			if (chapters[i][y].indent == 1) {
@@ -271,7 +272,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 
 	//set variables for the introduction to each specific book
 	var intro = "partials/content/book" + (bookNumber + 1) + "_overview.ejs";
-
+	
 	//create code snippets for each photo, alt tag, caption and credit.
 	for (var i = 0; i < global.book.photos.length; i++) {
 		if (bookNumber + 1 == global.book.photos[i].book) {
@@ -287,7 +288,6 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 		chapters: chapters,
 		chapter_title: chapters_array,
 		chapter_ID: chapterID_array,
-		bookIntro: currentBook[0],
 		body_text: body_array,
 		photo: photos_array,
 		pathPrefix: pathMode

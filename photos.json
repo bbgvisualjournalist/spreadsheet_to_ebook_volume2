@@ -34,7 +34,7 @@
   },
   {
     "book": "1",
-    "chapter": "0.1",
+    "chapter": "0",
     "imagenumber": "1",
     "filename": "0_1_鄒雪平.jpg",
     "cutline": "鄒雪平同學",
@@ -45,7 +45,7 @@
   },
   {
     "book": "1",
-    "chapter": "0.1",
+    "chapter": "0",
     "imagenumber": "2",
     "filename": "0_2_墓碑封面.jpg",
     "cutline": "《墓碑：中國六十年代大饑荒紀實》封面",
@@ -56,7 +56,7 @@
   },
   {
     "book": "1",
-    "chapter": "0.1",
+    "chapter": "0",
     "imagenumber": "3",
     "filename": "0_3_杨继绳.jpg",
     "cutline": "楊繼繩在辦公室",
@@ -870,7 +870,7 @@
   },
   {
     "book": "2",
-    "chapter": "0.1",
+    "chapter": "0",
     "imagenumber": "1",
     "filename": "0_1_周在德國入黨.jpg",
     "cutline": "1921年周恩来在德國柏林加入旅歐共產主義小組。圖為周恩來與入黨介紹人張申府、劉清揚等人泛舟柏林\n，討論周恩來加入組織問題",
@@ -881,7 +881,7 @@
   },
   {
     "book": "2",
-    "chapter": "0.1",
+    "chapter": "0",
     "imagenumber": "2",
     "filename": "0_2_周恩來在德國.jpg",
     "cutline": "周恩來在德國",
@@ -1310,7 +1310,7 @@
   },
   {
     "book": "3",
-    "chapter": "0.1",
+    "chapter": "0",
     "imagenumber": "1",
     "filename": "0_1_密爾頓.jpg",
     "cutline": "英國政論家、詩人、《論出版自由》的作者約翰·密爾頓",
@@ -1321,7 +1321,7 @@
   },
   {
     "book": "3",
-    "chapter": "0.1",
+    "chapter": "0",
     "imagenumber": "2",
     "filename": "0_2_《论出版自由》.png",
     "cutline": "1644年在倫敦出版的《論出版自由》一書的封面",
@@ -1332,7 +1332,7 @@
   },
   {
     "book": "3",
-    "chapter": "0.1",
+    "chapter": "0",
     "imagenumber": "3",
     "filename": "0_3_《论出版自由》中文.jpg",
     "cutline": "中文版的《論出版自由》",
@@ -1343,7 +1343,7 @@
   },
   {
     "book": "3",
-    "chapter": "0.1",
+    "chapter": "0",
     "imagenumber": "4",
     "filename": "0_4_民國約法.jpg",
     "cutline": "中華民國第一部憲法《中華民國臨時約法》",
