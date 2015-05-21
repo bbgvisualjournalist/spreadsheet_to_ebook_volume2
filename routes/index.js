@@ -204,6 +204,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	var intro_array = [];
 	var photos_array = [];
 	var chapters_array = [];
+	var chapterID_array = [];
 
 	//edit this for exporting to epub so that paths match up
 	//specifically for head.js with the CSS
@@ -229,7 +230,6 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 			currentBook.push(global.book.chapters[i]);
 		}
 	}
-	//console.log(currentBook);
 
 	//split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
 	console.log('Splitting the book into chapters.')
@@ -255,6 +255,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 		for (y = 0; y < chapters[i].length; y++) {
 			//populate array of the chapter titles
 			chapters_array.push(chapters[i][y].chaptertitle);
+			chapterID_array.push(chapters[i][y].htmlid);
 			//create code snippets for each chapter's content
 			if (chapters[i][y].indent == 1) {
 				var copy = 'partials/content/chapter' + chapters[i][y].chapter + '.ejs';
@@ -285,7 +286,8 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 		intro: intro,
 		chapters: chapters,
 		chapter_title: chapters_array,
-		//bookIntro: currentBook[0],
+		chapter_ID: chapterID_array,
+		bookIntro: currentBook[0],
 		body_text: body_array,
 		photo: photos_array,
 		pathPrefix: pathMode
