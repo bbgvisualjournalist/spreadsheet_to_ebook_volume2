@@ -199,7 +199,6 @@ router.get('/book/:bookNum/introduction.xhtml', function(req, res, next) {
 /* Display bodymatter.xhtml. */
 router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	var bookNumber = parseInt(req.params.bookNum);
-
 	var titles_array = [];
 	var body_array = [];
 	var intro_array = [];
@@ -230,6 +229,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 			currentBook.push(global.book.chapters[i]);
 		}
 	}
+	//console.log(currentBook);
 
 	//split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
 	console.log('Splitting the book into chapters.')
@@ -268,6 +268,9 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	//console.log(chapters_array.length);
 	//console.log(body_array);
 
+	//set variables for the introduction to each specific book
+	var intro = "partials/content/book" + (bookNumber + 1) + "_overview.ejs";
+
 	//create code snippets for each photo, alt tag, caption and credit.
 	for (var i = 0; i < global.book.photos.length; i++) {
 		if (bookNumber + 1 == global.book.photos[i].book) {
@@ -275,17 +278,15 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 			photos_array.push(photo);
 		}
 	}
-	console.log(photos_array);
+	//console.log(photos_array);
 
 	res.render('bodymatter', {
 		book: bookNumber,
-		//introduction: intros,
+		intro: intro,
 		chapters: chapters,
 		chapter_title: chapters_array,
-
-		bookIntro: currentBook[0],
+		//bookIntro: currentBook[0],
 		body_text: body_array,
-
 		photo: photos_array,
 		pathPrefix: pathMode
 	});

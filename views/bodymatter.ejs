@@ -6,11 +6,14 @@
 </head>
 <body>
 	<div epub:type="bodymatter" id="bodymatter">
-	<!-- Edit logic for optional intro to each book here -->
-	
+	<!-- Add book intro -->
+	<%-  include(intro); %>
+
 	<!-- Add chapter content -->
 	<% for (j=0; j < chapters.length; j++){ %>
-		<%-  include(body_text[j]); %>
+		<div epub:type="pagebreak" id="chapter">
+			<%-  include(body_text[j]); %>
+		</div>
 	<% } %>
 	</div>
 </body>
