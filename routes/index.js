@@ -230,7 +230,10 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 			currentBook.push(global.book.chapters[i]);
 		}
 	}
-
+	console.log('-------------')
+	//console.log(currentBook);
+	console.log('-------------')
+	console.log('global.book.chapters.length: '+global.book.chapters.length)
 	//split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
 	console.log('Splitting the book into chapters.')
 	var currentChapter = 1;
@@ -248,7 +251,12 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	}
 
 	chapters.push(chapter);
-	console.log(chapters[0][0].chaptertitle);
+	console.log('-------------')
+	console.log(chapters);
+	console.log('chapters length: '+ chapters.length);
+	console.log('-------------')
+	//console.log(chapters[0][0].chaptertitle);
+
 	
 	//loop through all the objects in the chapters array
 	for (i = 0; i < chapters.length; i++) {
@@ -263,9 +271,13 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 				//console.log(copy);
 				body_array.push(copy);
 			}
+
+			console.log("Book#"+ chapters[i][y].book + " :: section#"+chapters[i][y].subchapter + " :: "+ chapters[i][y].chaptertitle);
 		}
 		//console.log(i + ": " + body_array[i]);
 	}
+	console.log('body_array')
+	console.log(body_array);
 
 	//console.log(chapters_array.length);
 	//console.log(body_array);
@@ -281,7 +293,6 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 		}
 	}
 	//console.log(photos_array);
-
 	res.render('bodymatter', {
 		book: bookNumber,
 		intro: intro,
