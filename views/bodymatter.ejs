@@ -11,9 +11,7 @@
 
 	<!-- Add chapter content -->
 	<% for (j=0; j < chapters.length; j++){ %>
-		<div epub:type="pagebreak" id="chapter">
-			<%-  include(body_text[j]); %>
-		</div>
+		<%-  include(partials[j]); %>
 	<% } %>
 	</div>
 </body>
