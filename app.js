@@ -49,6 +49,7 @@ function readJSONFile( path ){
 global.book = {};
 global.book.meta = readJSONFile('./meta.json');
 global.book.chapters = readJSONFile('./chapters.json');
+global.book.chapters_meta = readJSONFile('./chapters_meta.json');
 global.book.photos = readJSONFile('./photos.json');
 global.book.config = readJSONFile('./config.json');
 
@@ -78,6 +79,10 @@ function fetchData(){
 				global.book.meta = readJSONFile('./meta.json');
 				console.log(err)
 			})
+            jf.writeFile("chapters_meta.json", data.chapters_meta.elements, function(err) {
+                global.book.chapters_meta = readJSONFile('./chapters_meta.json');
+                console.log(err)
+            })
 			jf.writeFile("photos.json", data.photos.elements, function(err) {
 				global.book.photos = readJSONFile('./photos.json');
 				console.log(err)

@@ -213,7 +213,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	}
 
 	//set variables for the introduction to each book
-	var intro = "partials/content/book" + (bookNumber + 1) + "_overview.ejs";
+	var intro = "partials/content/book" + (bookNumber + 1) + "/overview.ejs";
 
 	//Create a custom object for each book.
 	var currentBook = [];
@@ -230,13 +230,15 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	
 	//split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
 	console.log('Splitting book into chapters.' )
+    //console.log(currentBook.length)
+    //error for book two happens between here and partials array!!!!!!!
 	var currentChapter = 1;
 	var chapters = [];
 	var chapter = [];
 	for (i = 1; i < currentBook.length; i++) {
 		if (currentBook[i].chapter == currentChapter) {
 			chapter.push(currentBook[i]);
-			console.log(chapter)
+			//console.log(chapter)
 		} else {
 			chapters.push(chapter);
 			currentChapter++;
@@ -247,11 +249,11 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	}
 
 	chapters.push(chapter);
-	//console.log('chapters length: ' + chapters.length);
+    console.log('-------------');
+	console.log('chapters length: ' + chapters.length);
 	//console.log('-------------')
 	//console.log(chapters);
 	//console.log('-------------')
-	//console.log(chapters[0][0].chaptertitle);
 
 	//loop through all the objects in the chapters array
 	for (i = 0; i < chapters.length; i++) {
@@ -262,7 +264,8 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 			chapterID_array.push(chapters[i][y].htmlid);
 			//create code snippets for each chapter's content
 			if (chapters[i][y].indent == 1) {
-				var copy = 'partials/content/book' + (bookNumber +1) + '/chapter' + (chapters[i][y].chapter) + '.ejs';
+				var copy = 'partials/content/book' + (bookNumber + 1) + '/chapter' + (chapters[i][y].chapter) + '.ejs';
+                //console.log('-------------');
 				//console.log(copy);
 				partials_array.push(copy);
 			}
@@ -302,7 +305,8 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 /* Display the backmatter.xhtml. */
 router.get('/book/:bookNum/backmatter.xhtml', function(req, res, next) {
 	var bookNumber = parseInt(req.params.bookNum);
-	var concat = "partials/content/back" + (bookNumber + 1) + ".ejs"
+    var endnotes_array = [];
+    var thischapter_array = [];
 
 	//edit this for exporting to epub so that paths match up
 	//specifically for head.js with the CSS
@@ -312,9 +316,43 @@ router.get('/book/:bookNum/backmatter.xhtml', function(req, res, next) {
 		pathMode = ''
 	}
 
+    //Create a custom object for each book.
+    var currentBook = [];
+    console.log('Isolating book number ' + (bookNumber + 1))
+    for (var i = 0; i < global.book.chapters_meta.length; i++) {
+        if (global.book.chapters_meta[i].booknumber - 1 == bookNumber) {
+            currentBook.push(global.book.chapters_meta[i]);
+        }
+    }
+    //console.log('-------------')
+    //console.log(currentBook);
+
+    //loop through all the objects in the current book array
+    for (i = 0; i < currentBook.length; i++) {
+        var this_book = global.book.chapters_meta[i].booknumber;
+        var this_chapter = global.book.chapters_meta[i].chapternumber;
+        if (this_chapter == 0) {
+            //set variables for the introduction to each book
+            var endnotes = 'partials/content/book' + (this_book)  + '/overviewBacknotes.ejs';
+            //endnotes_array.push(endnotes);
+            //thischapter_array.push(this_chapter);
+        } else {
+            var endnotes = 'partials/content/book' + (this_book) + '/back' + (this_chapter) + '.ejs';
+            //endnotes_array.push(endnotes);
+            //thischapter_array.push(this_chapter);
+        }
+    }
+
+    //console.log('-------------');
+    //console.log(endnotes_array);
+    //console.log('-------------');
+    //console.log(thischapter_array);
+
 	res.render('backmatter', {
 		book: bookNumber,
-		chapter: concat,
+		//endnotes: endnotes_array,
+        endnotes: endnotes,
+        thischapter: thischapter_array,
 		pathPrefix: pathMode
 	});
 });

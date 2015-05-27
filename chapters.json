@@ -562,6 +562,17 @@
   },
   {
     "book": "2",
+    "chapter": "0",
+    "subchapter": "0",
+    "chaptertitle": "是是非非周恩來",
+    "chaptertitleenglish": "",
+    "htmlid": "intro",
+    "htmlidold": "start",
+    "indent": "1",
+    "rowNumber": 52
+  },
+  {
+    "book": "2",
     "chapter": "1",
     "subchapter": "0",
     "chaptertitle": "一 保與不保的匠心獨運",
@@ -569,7 +580,7 @@
     "htmlid": "start0",
     "htmlidold": "start",
     "indent": "1",
-    "rowNumber": 52
+    "rowNumber": 53
   },
   {
     "book": "2",
@@ -580,7 +591,7 @@
     "htmlid": "part1",
     "htmlidold": "part1",
     "indent": "2",
-    "rowNumber": 53
+    "rowNumber": 54
   },
   {
     "book": "2",
@@ -591,7 +602,7 @@
     "htmlid": "part2",
     "htmlidold": "part2",
     "indent": "2",
-    "rowNumber": 54
+    "rowNumber": 55
   },
   {
     "book": "2",
@@ -602,7 +613,7 @@
     "htmlid": "part3",
     "htmlidold": "part3",
     "indent": "2",
-    "rowNumber": 55
+    "rowNumber": 56
   },
   {
     "book": "2",
@@ -613,7 +624,7 @@
     "htmlid": "part4",
     "htmlidold": "part4",
     "indent": "2",
-    "rowNumber": 56
+    "rowNumber": 57
   },
   {
     "book": "2",
@@ -624,7 +635,7 @@
     "htmlid": "part5",
     "htmlidold": "part5",
     "indent": "2",
-    "rowNumber": 57
+    "rowNumber": 58
   },
   {
     "book": "2",
@@ -635,7 +646,7 @@
     "htmlid": "part6",
     "htmlidold": "part6",
     "indent": "2",
-    "rowNumber": 58
+    "rowNumber": 59
   },
   {
     "book": "2",
@@ -646,7 +657,7 @@
     "htmlid": "part7",
     "htmlidold": "part7",
     "indent": "2",
-    "rowNumber": 59
+    "rowNumber": 60
   },
   {
     "book": "2",
@@ -657,7 +668,7 @@
     "htmlid": "part8",
     "htmlidold": "part8",
     "indent": "2",
-    "rowNumber": 60
+    "rowNumber": 61
   },
   {
     "book": "2",
@@ -668,7 +679,7 @@
     "htmlid": "start9",
     "htmlidold": "start",
     "indent": "1",
-    "rowNumber": 61
+    "rowNumber": 62
   },
   {
     "book": "2",
@@ -679,7 +690,7 @@
     "htmlid": "part10",
     "htmlidold": "part1",
     "indent": "2",
-    "rowNumber": 62
+    "rowNumber": 63
   },
   {
     "book": "2",
@@ -690,7 +701,7 @@
     "htmlid": "part11",
     "htmlidold": "part2",
     "indent": "2",
-    "rowNumber": 63
+    "rowNumber": 64
   },
   {
     "book": "2",
@@ -701,7 +712,7 @@
     "htmlid": "part12",
     "htmlidold": "part3",
     "indent": "2",
-    "rowNumber": 64
+    "rowNumber": 65
   },
   {
     "book": "2",
@@ -712,7 +723,7 @@
     "htmlid": "part13",
     "htmlidold": "part4",
     "indent": "2",
-    "rowNumber": 65
+    "rowNumber": 66
   },
   {
     "book": "2",
@@ -723,7 +734,7 @@
     "htmlid": "part14",
     "htmlidold": "part5",
     "indent": "2",
-    "rowNumber": 66
+    "rowNumber": 67
   },
   {
     "book": "2",
@@ -734,7 +745,7 @@
     "htmlid": "part15",
     "htmlidold": "part6",
     "indent": "2",
-    "rowNumber": 67
+    "rowNumber": 68
   },
   {
     "book": "2",
@@ -745,7 +756,7 @@
     "htmlid": "part16",
     "htmlidold": "part7",
     "indent": "2",
-    "rowNumber": 68
+    "rowNumber": 69
   },
   {
     "book": "2",
@@ -756,7 +767,7 @@
     "htmlid": "part17",
     "htmlidold": "part8",
     "indent": "2",
-    "rowNumber": 69
+    "rowNumber": 70
   },
   {
     "book": "2",
@@ -767,7 +778,7 @@
     "htmlid": "part18",
     "htmlidold": "part9",
     "indent": "2",
-    "rowNumber": 70
+    "rowNumber": 71
   },
   {
     "book": "2",
@@ -778,7 +789,7 @@
     "htmlid": "part19",
     "htmlidold": "part10",
     "indent": "2",
-    "rowNumber": 71
+    "rowNumber": 72
   },
   {
     "book": "2",
@@ -789,7 +800,7 @@
     "htmlid": "part20",
     "htmlidold": "part11",
     "indent": "2",
-    "rowNumber": 72
+    "rowNumber": 73
   },
   {
     "book": "2",
@@ -800,7 +811,7 @@
     "htmlid": "part21",
     "htmlidold": "part12",
     "indent": "2",
-    "rowNumber": 73
+    "rowNumber": 74
   },
   {
     "book": "2",
@@ -811,7 +822,7 @@
     "htmlid": "part22",
     "htmlidold": "part13",
     "indent": "2",
-    "rowNumber": 74
+    "rowNumber": 75
   },
   {
     "book": "2",
@@ -822,7 +833,7 @@
     "htmlid": "part23",
     "htmlidold": "part14",
     "indent": "2",
-    "rowNumber": 75
+    "rowNumber": 76
   },
   {
     "book": "2",
@@ -833,7 +844,7 @@
     "htmlid": "part24",
     "htmlidold": "part15",
     "indent": "2",
-    "rowNumber": 76
+    "rowNumber": 77
   },
   {
     "book": "3",
@@ -844,7 +855,7 @@
     "htmlid": "intro",
     "htmlidold": "start",
     "indent": "1",
-    "rowNumber": 77
+    "rowNumber": 78
   },
   {
     "book": "3",
@@ -855,7 +866,7 @@
     "htmlid": "start0",
     "htmlidold": "start",
     "indent": "1",
-    "rowNumber": 78
+    "rowNumber": 79
   },
   {
     "book": "3",
@@ -866,7 +877,7 @@
     "htmlid": "part1",
     "htmlidold": "part1",
     "indent": "2",
-    "rowNumber": 79
+    "rowNumber": 80
   },
   {
     "book": "3",
@@ -877,7 +888,7 @@
     "htmlid": "part2",
     "htmlidold": "part2",
     "indent": "2",
-    "rowNumber": 80
+    "rowNumber": 81
   },
   {
     "book": "3",
@@ -888,7 +899,7 @@
     "htmlid": "part3",
     "htmlidold": "part3",
     "indent": "2",
-    "rowNumber": 81
+    "rowNumber": 82
   },
   {
     "book": "3",
@@ -899,7 +910,7 @@
     "htmlid": "part4",
     "htmlidold": "part4",
     "indent": "2",
-    "rowNumber": 82
+    "rowNumber": 83
   },
   {
     "book": "3",
@@ -910,7 +921,7 @@
     "htmlid": "part5",
     "htmlidold": "part5",
     "indent": "2",
-    "rowNumber": 83
+    "rowNumber": 84
   },
   {
     "book": "3",
@@ -921,7 +932,7 @@
     "htmlid": "part6",
     "htmlidold": "part6",
     "indent": "2",
-    "rowNumber": 84
+    "rowNumber": 85
   },
   {
     "book": "3",
@@ -932,7 +943,7 @@
     "htmlid": "part7",
     "htmlidold": "part7",
     "indent": "2",
-    "rowNumber": 85
+    "rowNumber": 86
   },
   {
     "book": "3",
@@ -943,7 +954,7 @@
     "htmlid": "part8",
     "htmlidold": "part8",
     "indent": "2",
-    "rowNumber": 86
+    "rowNumber": 87
   },
   {
     "book": "3",
@@ -954,7 +965,7 @@
     "htmlid": "part9",
     "htmlidold": "part9",
     "indent": "2",
-    "rowNumber": 87
+    "rowNumber": 88
   },
   {
     "book": "3",
@@ -965,7 +976,7 @@
     "htmlid": "part10",
     "htmlidold": "part10",
     "indent": "2",
-    "rowNumber": 88
+    "rowNumber": 89
   },
   {
     "book": "3",
@@ -976,7 +987,7 @@
     "htmlid": "part11",
     "htmlidold": "part11",
     "indent": "2",
-    "rowNumber": 89
+    "rowNumber": 90
   },
   {
     "book": "3",
@@ -987,7 +998,7 @@
     "htmlid": "part12",
     "htmlidold": "part12",
     "indent": "2",
-    "rowNumber": 90
+    "rowNumber": 91
   },
   {
     "book": "3",
@@ -998,7 +1009,7 @@
     "htmlid": "part13",
     "htmlidold": "part13",
     "indent": "2",
-    "rowNumber": 91
+    "rowNumber": 92
   },
   {
     "book": "3",
@@ -1009,7 +1020,7 @@
     "htmlid": "start14",
     "htmlidold": "start",
     "indent": "1",
-    "rowNumber": 92
+    "rowNumber": 93
   },
   {
     "book": "3",
@@ -1020,7 +1031,7 @@
     "htmlid": "part15",
     "htmlidold": "part1",
     "indent": "2",
-    "rowNumber": 93
+    "rowNumber": 94
   },
   {
     "book": "3",
@@ -1031,7 +1042,7 @@
     "htmlid": "part16",
     "htmlidold": "part2",
     "indent": "2",
-    "rowNumber": 94
+    "rowNumber": 95
   },
   {
     "book": "3",
@@ -1042,7 +1053,7 @@
     "htmlid": "part17",
     "htmlidold": "part3",
     "indent": "2",
-    "rowNumber": 95
+    "rowNumber": 96
   },
   {
     "book": "3",
@@ -1053,7 +1064,7 @@
     "htmlid": "part18",
     "htmlidold": "part4",
     "indent": "2",
-    "rowNumber": 96
+    "rowNumber": 97
   },
   {
     "book": "3",
@@ -1064,7 +1075,7 @@
     "htmlid": "part19",
     "htmlidold": "part5",
     "indent": "2",
-    "rowNumber": 97
+    "rowNumber": 98
   },
   {
     "book": "3",
@@ -1075,7 +1086,7 @@
     "htmlid": "part20",
     "htmlidold": "part6",
     "indent": "2",
-    "rowNumber": 98
+    "rowNumber": 99
   },
   {
     "book": "3",
@@ -1086,7 +1097,7 @@
     "htmlid": "part21",
     "htmlidold": "part7",
     "indent": "2",
-    "rowNumber": 99
+    "rowNumber": 100
   },
   {
     "book": "3",
@@ -1097,7 +1108,7 @@
     "htmlid": "part22",
     "htmlidold": "part8",
     "indent": "2",
-    "rowNumber": 100
+    "rowNumber": 101
   },
   {
     "book": "3",
@@ -1108,7 +1119,7 @@
     "htmlid": "part23",
     "htmlidold": "part9",
     "indent": "2",
-    "rowNumber": 101
+    "rowNumber": 102
   },
   {
     "book": "3",
@@ -1119,7 +1130,7 @@
     "htmlid": "part24",
     "htmlidold": "part10",
     "indent": "2",
-    "rowNumber": 102
+    "rowNumber": 103
   },
   {
     "book": "3",
@@ -1130,7 +1141,7 @@
     "htmlid": "part25",
     "htmlidold": "part11",
     "indent": "2",
-    "rowNumber": 103
+    "rowNumber": 104
   },
   {
     "book": "3",
@@ -1141,6 +1152,6 @@
     "htmlid": "part26",
     "htmlidold": "part12",
     "indent": "2",
-    "rowNumber": 104
+    "rowNumber": 105
   }
 ]
