@@ -1,9 +1,9 @@
 [
   {
-    "book": "all",
-    "chapter": "preface 1",
+    "book": "0",
+    "chapter": "1",
     "imagenumber": "1",
-    "filename": "p1_鲍彤.jpg",
+    "filename": "鲍彤.jpg",
     "cutline": "鮑彤",
     "credit": "",
     "alttext": "鮑彤",
@@ -11,10 +11,10 @@
     "rowNumber": 1
   },
   {
-    "book": "all",
-    "chapter": "preface 2",
+    "book": "0",
+    "chapter": "1",
     "imagenumber": "2",
-    "filename": "p2_戴晴.jpg",
+    "filename": "戴晴.jpg",
     "cutline": "戴晴",
     "credit": "",
     "alttext": "戴晴",
