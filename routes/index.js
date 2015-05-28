@@ -180,7 +180,7 @@ router.get('/book/:bookNum/toc.ncx', function(req, res, next) {
 /* Display introduction.xhtml. */
 router.get('/book/:bookNum/introduction.xhtml', function(req, res, next) {
 	var bookNumber = parseInt(req.params.bookNum);
-    var photos_array = [];
+    var picture_array = [];
 
 	//edit this for exporting to epub so that paths match up
 	//specifically for head.js with the CSS
@@ -192,16 +192,18 @@ router.get('/book/:bookNum/introduction.xhtml', function(req, res, next) {
 
     //create code snippets for each photo, alt tag, caption and credit.
     for (var i = 0; i < global.book.photos.length; i++) {
-        if (bookNumber == global.book.photos[i].book) {
-            var photo = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/' + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
-            photos_array.push(photo);
+        if (global.book.photos[i].book == 0) {
+            var picture = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_0/' + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
+            picture_array.push(picture);
         }
     }
-    console.log(photos_array);
+
+    console.log('PICTURE ARRAY: ')
+    console.log(picture_array);
 
 	res.render('introduction', {
 		book: bookNumber,
-        photo: photos_array,
+        picture: picture_array,
 		pathPrefix: pathMode
 	});
 });
@@ -285,8 +287,8 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 		}
 		//console.log(i + ": " + partials_array[i]);
 	}
-	console.log('partials_array')
-	console.log(partials_array);
+	//console.log('partials_array')
+	//console.log(partials_array);
 
 	//console.log(titles_array.length);
 
@@ -297,7 +299,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 			photos_array.push(photo);
 		}
 	}
-	console.log(photos_array);
+	//console.log(photos_array);
 
 	res.render('bodymatter', {
 		book: bookNumber,
