@@ -180,6 +180,7 @@ router.get('/book/:bookNum/toc.ncx', function(req, res, next) {
 /* Display introduction.xhtml. */
 router.get('/book/:bookNum/introduction.xhtml', function(req, res, next) {
 	var bookNumber = parseInt(req.params.bookNum);
+    var photos_array = [];
 
 	//edit this for exporting to epub so that paths match up
 	//specifically for head.js with the CSS
@@ -189,8 +190,18 @@ router.get('/book/:bookNum/introduction.xhtml', function(req, res, next) {
 		pathMode = ''
 	}
 
+    //create code snippets for each photo, alt tag, caption and credit.
+    for (var i = 0; i < global.book.photos.length; i++) {
+        if (bookNumber == global.book.photos[i].book) {
+            var photo = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/' + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
+            photos_array.push(photo);
+        }
+    }
+    console.log(photos_array);
+
 	res.render('introduction', {
 		book: bookNumber,
+        photo: photos_array,
 		pathPrefix: pathMode
 	});
 });
@@ -286,7 +297,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 			photos_array.push(photo);
 		}
 	}
-	//console.log(photos_array);
+	console.log(photos_array);
 
 	res.render('bodymatter', {
 		book: bookNumber,
@@ -343,15 +354,14 @@ router.get('/book/:bookNum/backmatter.xhtml', function(req, res, next) {
         }
     }
 
-    console.log('ENDNOTES ARRAY -------------');
-    console.log(endnotes_array);
-    console.log('THIS CHAPTER ARRAY -------------');
-    console.log(thischapter_array);
+    //console.log('ENDNOTES ARRAY -------------');
+    //console.log(endnotes_array);
+    //console.log('THIS CHAPTER ARRAY -------------');
+    //console.log(thischapter_array);
 
 	res.render('backmatter', {
 		book: bookNumber,
 		endnotes: endnotes_array,
-        //endnotes: endnotes,
         thischapter: thischapter_array,
 		pathPrefix: pathMode
 	});
