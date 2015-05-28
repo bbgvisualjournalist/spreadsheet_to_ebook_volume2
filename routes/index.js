@@ -334,24 +334,24 @@ router.get('/book/:bookNum/backmatter.xhtml', function(req, res, next) {
         if (this_chapter == 0) {
             //set variables for the introduction to each book
             var endnotes = 'partials/content/book' + (this_book)  + '/overviewBacknotes.ejs';
-            //endnotes_array.push(endnotes);
-            //thischapter_array.push(this_chapter);
+            endnotes_array.push(endnotes);
+            thischapter_array.push(this_chapter);
         } else {
             var endnotes = 'partials/content/book' + (this_book) + '/back' + (this_chapter) + '.ejs';
-            //endnotes_array.push(endnotes);
-            //thischapter_array.push(this_chapter);
+            endnotes_array.push(endnotes);
+            thischapter_array.push(this_chapter);
         }
     }
 
-    //console.log('-------------');
-    //console.log(endnotes_array);
-    //console.log('-------------');
-    //console.log(thischapter_array);
+    console.log('ENDNOTES ARRAY -------------');
+    console.log(endnotes_array);
+    console.log('THIS CHAPTER ARRAY -------------');
+    console.log(thischapter_array);
 
 	res.render('backmatter', {
 		book: bookNumber,
-		//endnotes: endnotes_array,
-        endnotes: endnotes,
+		endnotes: endnotes_array,
+        //endnotes: endnotes,
         thischapter: thischapter_array,
 		pathPrefix: pathMode
 	});
