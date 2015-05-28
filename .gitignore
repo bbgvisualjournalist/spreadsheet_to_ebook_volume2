@@ -29,3 +29,10 @@ node_modules
 
 # ignore webstorm stuff
 /.idea/
+
+# ignore document JSON
+chapters.json
+meta.json
+chapters_meta.json
+config.json
+photos.json
