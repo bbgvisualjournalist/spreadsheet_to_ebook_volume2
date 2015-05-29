@@ -54,7 +54,7 @@ global.book.photos = readJSONFile('./data/photos.json');
 global.book.config = readJSONFile('./data/config.json');
 
 //Toggle for offline use; ignores Google spreadsheet request.
-var offlineMode=false;
+var offlineMode=true;
 
 
 //Add a timer to periodically update data for edits.
