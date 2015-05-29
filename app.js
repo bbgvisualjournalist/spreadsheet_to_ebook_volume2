@@ -47,14 +47,14 @@ function readJSONFile( path ){
 
 //Use namespaced global variable to keep data that will update.
 global.book = {};
-global.book.meta = readJSONFile('./meta.json');
-global.book.chapters = readJSONFile('./chapters.json');
-global.book.chapters_meta = readJSONFile('./chapters_meta.json');
-global.book.photos = readJSONFile('./photos.json');
-global.book.config = readJSONFile('./config.json');
+global.book.meta = readJSONFile('./data/meta.json');
+global.book.chapters = readJSONFile('./data/chapters.json');
+global.book.chapters_meta = readJSONFile('./data/chapters_meta.json');
+global.book.photos = readJSONFile('./data/photos.json');
+global.book.config = readJSONFile('./data/config.json');
 
 //Toggle for offline use; ignores Google spreadsheet request.
-var offlineMode=false;
+var offlineMode=true;
 
 
 //Add a timer to periodically update data for edits.
@@ -71,24 +71,24 @@ function fetchData(){
 			console.log("loading, updating and saving data from spreadsheet");
 
 			//
-			jf.writeFile("chapters.json", data.chapters.elements, function(err) {
-				global.book.chapters = readJSONFile('./chapters.json');
+			jf.writeFile("data/chapters.json", data.chapters.elements, function(err) {
+				global.book.chapters = readJSONFile('./data/chapters.json');
 				console.log(err)
 			})
-			jf.writeFile("meta.json", data.meta.elements, function(err) {
-				global.book.meta = readJSONFile('./meta.json');
+			jf.writeFile("data/meta.json", data.meta.elements, function(err) {
+				global.book.meta = readJSONFile('./data/meta.json');
 				console.log(err)
 			})
-            jf.writeFile("chapters_meta.json", data.chapters_meta.elements, function(err) {
-                global.book.chapters_meta = readJSONFile('./chapters_meta.json');
+            jf.writeFile("data/chapters_meta.json", data.chapters_meta.elements, function(err) {
+                global.book.chapters_meta = readJSONFile('./data/chapters_meta.json');
                 console.log(err)
             })
-			jf.writeFile("photos.json", data.photos.elements, function(err) {
-				global.book.photos = readJSONFile('./photos.json');
+			jf.writeFile("data/photos.json", data.photos.elements, function(err) {
+				global.book.photos = readJSONFile('./data/photos.json');
 				console.log(err)
 			})
-			jf.writeFile("config.json", data.config.elements, function(err) {
-				global.book.config = readJSONFile('./config.json');
+			jf.writeFile("data/config.json", data.config.elements, function(err) {
+				global.book.config = readJSONFile('./data/config.json');
 				console.log(err);
 			})
 
