@@ -52,6 +52,7 @@ global.book.chapters = readJSONFile('./data/chapters.json');
 global.book.chapters_meta = readJSONFile('./data/chapters_meta.json');
 global.book.photos = readJSONFile('./data/photos.json');
 global.book.config = readJSONFile('./data/config.json');
+global.spreadsheet = spreadsheetURL;
 
 //Toggle for offline use; ignores Google spreadsheet request.
 var offlineMode=false;

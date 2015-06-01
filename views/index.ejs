@@ -15,7 +15,7 @@
 <body>
 <div id='container'>
 	<h1><%= title %></h1>
-	<p><strong>The metadata, titles, chapters, photos, captions and credits are being generated from this <a href='https://docs.google.com/spreadsheets/d/1dXbUkXlGb8GyVMdKpuJB__82MAI6-VWqhzcvq2A3rYY/pubhtml' target='_blank'>google spreadsheet</a>.</strong></p>
+	<p><strong>The metadata, titles, chapters, photos, captions and credits are being generated from this <a href='<%= global.spreadsheet %>' target='_blank'>google spreadsheet</a>.</strong></p>
 	<br/>
 
 	<% for (var i=0; i<global.book.meta.length; i++){ %>
