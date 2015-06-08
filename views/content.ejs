@@ -36,7 +36,7 @@
 
 	<item id="cover-image" href="images/<%= photos[0] %>" media-type="image/jpeg" properties="cover-image"/>
 	<%for (var i=1; i<photos.length;i++){ %>
-	<item id="photo<%= i %>" href="images/<%= photos[i] %>" media-type="image/jpeg"/><% } %>
+	<item id="photo<%= i %>" href="images/v2_<%= photos_bookNumber[i] %>/<%= photos[i] %>" media-type="image/jpeg"/><% } %>
 </manifest>
 <spine toc="ncx">
 	<itemref idref="cover"/>

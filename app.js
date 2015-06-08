@@ -20,11 +20,6 @@ var fs = require('fs');
 var jf = require('jsonfile');
 
 function readJSONFile( path ){
-	/*
-	var binaryData = fs.readFileSync( path );
-	return JSON.parse( binaryData.toString() );
-	*/
-
 	//Added a simple check to see if the JSON files exist.
 	var binaryData;
 	try {

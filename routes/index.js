@@ -43,9 +43,14 @@ router.get('/book/:bookNum/content.opf', function(req, res, next) {
 	originalPubDateFormatted = originalPubDateFormatted.replace(/\..*Z/, 'Z');
 
 	var photos_array = [];
+	var photos_bookNumber_array = []; //Used to link to the subfolders for the images in .opf
+
 	for (var i = 0; i < global.book.photos.length; i++) {
 		if (bookNumber + 1 == global.book.photos[i].book) {
 			var photo = global.book.photos[i].filename;
+			var photo_bookNumber = global.book.photos[i].chapter;
+
+			photos_bookNumber_array.push(photo_bookNumber);
 			photos_array.push(photo);
 		}
 	}
@@ -53,6 +58,7 @@ router.get('/book/:bookNum/content.opf', function(req, res, next) {
 	res.render('content', {
 		book: bookNumber,
 		photos: photos_array,
+		photos_bookNumber: photos_bookNumber_array,
 		date: d,
 		pubDate: originalPubDateFormatted
 	});
