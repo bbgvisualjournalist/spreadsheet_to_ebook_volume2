@@ -48,7 +48,7 @@ router.get('/book/:bookNum/content.opf', function(req, res, next) {
 	for (var i = 0; i < global.book.photos.length; i++) {
 		if (bookNumber + 1 == global.book.photos[i].book) {
 			var photo = global.book.photos[i].filename;
-			var photo_bookNumber = global.book.photos[i].chapter;
+			var photo_bookNumber = global.book.photos[i].book;
 
 			photos_bookNumber_array.push(photo_bookNumber);
 			photos_array.push(photo);
