@@ -48,7 +48,7 @@ router.get('/book/:bookNum/content.opf', function(req, res, next) {
 	for (var i = 0; i < global.book.photos.length; i++) {
 		if (bookNumber + 1 == global.book.photos[i].book) {
 			var photo = global.book.photos[i].filename;
-			var photo_bookNumber = global.book.photos[i].chapter;
+			var photo_bookNumber = global.book.photos[i].book;
 
 			photos_bookNumber_array.push(photo_bookNumber);
 			photos_array.push(photo);
@@ -199,7 +199,7 @@ router.get('/book/:bookNum/introduction.xhtml', function(req, res, next) {
     //create code snippets for each photo, alt tag, caption and credit.
     for (var i = 0; i < global.book.photos.length; i++) {
         if (global.book.photos[i].book == 0) {
-            var picture = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_0/' + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
+            var picture = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
             picture_array.push(picture);
         }
     }
