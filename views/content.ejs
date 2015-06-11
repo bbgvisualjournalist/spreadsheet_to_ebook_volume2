@@ -34,9 +34,11 @@
 	<item id="font3" href="fonts/ヒラギノ明朝ProW6.otf" media-type="application/vnd.ms-opentype"/>
 	<item id="font4" href="fonts/ヒラギノ明朝ProW3.otf" media-type="application/vnd.ms-opentype"/>
 
-	<item id="cover-image" href="images/<%= photos[0] %>" media-type="image/jpeg" properties="cover-image"/>
-	<%for (var i=1; i<photos.length;i++){ %>
-	<item id="photo<%= i %>" href="images/v2_<%= photos_bookNumber[i] %>/<%= photos[i] %>" media-type="image/jpeg"/><% } %>
+	<item id="cover-image" href="images/<%= photos[2] %>" media-type="image/jpeg" properties="cover-image"/>
+	<%for (var i=0; i<photos.length && i != 2;i++){ %>
+	<item id="intro-photo<%= i+1 %>" href="images/v2_<%= photos_bookNumber[i] %>/<%= photos[i] %>" media-type="image/jpeg"/><% } %>
+		<%for (var i=3; i<photos.length;i++){ %>
+	<item id="photo<%= i-3 %>" href="images/v2_<%= photos_bookNumber[i] %>/<%= photos[i] %>" media-type="image/jpeg"/><% } %>
 </manifest>
 <spine toc="ncx">
 	<itemref idref="cover"/>

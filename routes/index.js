@@ -52,6 +52,13 @@ router.get('/book/:bookNum/content.opf', function(req, res, next) {
 
 			photos_bookNumber_array.push(photo_bookNumber);
 			photos_array.push(photo);
+		} else if (global.book.photos[i].book == 0) {
+			var photo = global.book.photos[i].filename;
+			var photo_bookNumber = global.book.photos[i].book;
+
+			photos_bookNumber_array.push(photo_bookNumber);
+			photos_array.push(photo);
+			console.log(photo);
 		}
 	}
 
@@ -186,7 +193,7 @@ router.get('/book/:bookNum/toc.ncx', function(req, res, next) {
 /* Display introduction.xhtml. */
 router.get('/book/:bookNum/introduction.xhtml', function(req, res, next) {
 	var bookNumber = parseInt(req.params.bookNum);
-    var picture_array = [];
+	var picture_array = [];
 
 	//edit this for exporting to epub so that paths match up
 	//specifically for head.js with the CSS
@@ -196,20 +203,20 @@ router.get('/book/:bookNum/introduction.xhtml', function(req, res, next) {
 		pathMode = ''
 	}
 
-    //create code snippets for each photo, alt tag, caption and credit.
-    for (var i = 0; i < global.book.photos.length; i++) {
-        if (global.book.photos[i].book == 0) {
-            var picture = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
-            picture_array.push(picture);
-        }
-    }
+	//create code snippets for each photo, alt tag, caption and credit.
+	for (var i = 0; i < global.book.photos.length; i++) {
+		if (global.book.photos[i].book == 0) {
+			var picture = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
+			picture_array.push(picture);
+		}
+	}
 
-    console.log('PICTURE ARRAY: ')
-    console.log(picture_array);
+	console.log('PICTURE ARRAY: ')
+	console.log(picture_array);
 
 	res.render('introduction', {
 		book: bookNumber,
-        picture: picture_array,
+		picture: picture_array,
 		pathPrefix: pathMode
 	});
 });
@@ -246,11 +253,11 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	//console.log(currentBook);
 	//console.log('-------------')
 	//console.log('global.book.chapters.length: ' + global.book.chapters.length)
-	
+
 	//split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
-	console.log('Splitting book into chapters.' )
-    //console.log(currentBook.length)
-    //error for book two happens between here and partials array!!!!!!!
+	console.log('Splitting book into chapters.')
+		//console.log(currentBook.length)
+		//error for book two happens between here and partials array!!!!!!!
 	var currentChapter = 1;
 	var chapters = [];
 	var chapter = [];
@@ -268,7 +275,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 	}
 
 	chapters.push(chapter);
-    console.log('-------------');
+	console.log('-------------');
 	console.log('chapters length: ' + chapters.length);
 	//console.log('-------------')
 	//console.log(chapters);
@@ -284,7 +291,7 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 			//create code snippets for each chapter's content
 			if (chapters[i][y].indent == 1) {
 				var copy = 'partials/content/book' + (bookNumber + 1) + '/chapter' + (chapters[i][y].chapter) + '.ejs';
-                //console.log('-------------');
+				//console.log('-------------');
 				//console.log(copy);
 				partials_array.push(copy);
 			}
@@ -324,8 +331,8 @@ router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
 /* Display the backmatter.xhtml. */
 router.get('/book/:bookNum/backmatter.xhtml', function(req, res, next) {
 	var bookNumber = parseInt(req.params.bookNum);
-    var endnotes_array = [];
-    var thischapter_array = [];
+	var endnotes_array = [];
+	var thischapter_array = [];
 
 	//edit this for exporting to epub so that paths match up
 	//specifically for head.js with the CSS
@@ -335,42 +342,42 @@ router.get('/book/:bookNum/backmatter.xhtml', function(req, res, next) {
 		pathMode = ''
 	}
 
-    //Create a custom object for each book.
-    var currentBook = [];
-    console.log('Isolating book number ' + (bookNumber + 1))
-    for (var i = 0; i < global.book.chapters_meta.length; i++) {
-        if (global.book.chapters_meta[i].booknumber - 1 == bookNumber) {
-            currentBook.push(global.book.chapters_meta[i]);
-        }
-    }
-    //console.log('-------------')
-    //console.log(currentBook);
+	//Create a custom object for each book.
+	var currentBook = [];
+	console.log('Isolating book number ' + (bookNumber + 1))
+	for (var i = 0; i < global.book.chapters_meta.length; i++) {
+		if (global.book.chapters_meta[i].booknumber - 1 == bookNumber) {
+			currentBook.push(global.book.chapters_meta[i]);
+		}
+	}
+	//console.log('-------------')
+	//console.log(currentBook);
 
-    //loop through all the objects in the current book array
-    for (i = 0; i < currentBook.length; i++) {
-        var this_book = global.book.chapters_meta[i].booknumber;
-        var this_chapter = global.book.chapters_meta[i].chapternumber;
-        if (this_chapter == 0) {
-            //set variables for the introduction to each book
-            var endnotes = 'partials/content/book' + (this_book)  + '/overviewBacknotes.ejs';
-            endnotes_array.push(endnotes);
-            thischapter_array.push(this_chapter);
-        } else {
-            var endnotes = 'partials/content/book' + (this_book) + '/back' + (this_chapter) + '.ejs';
-            endnotes_array.push(endnotes);
-            thischapter_array.push(this_chapter);
-        }
-    }
+	//loop through all the objects in the current book array
+	for (i = 0; i < currentBook.length; i++) {
+		var this_book = global.book.chapters_meta[i].booknumber;
+		var this_chapter = global.book.chapters_meta[i].chapternumber;
+		if (this_chapter == 0) {
+			//set variables for the introduction to each book
+			var endnotes = 'partials/content/book' + (this_book) + '/overviewBacknotes.ejs';
+			endnotes_array.push(endnotes);
+			thischapter_array.push(this_chapter);
+		} else {
+			var endnotes = 'partials/content/book' + (this_book) + '/back' + (this_chapter) + '.ejs';
+			endnotes_array.push(endnotes);
+			thischapter_array.push(this_chapter);
+		}
+	}
 
-    //console.log('ENDNOTES ARRAY -------------');
-    //console.log(endnotes_array);
-    //console.log('THIS CHAPTER ARRAY -------------');
-    //console.log(thischapter_array);
+	//console.log('ENDNOTES ARRAY -------------');
+	//console.log(endnotes_array);
+	//console.log('THIS CHAPTER ARRAY -------------');
+	//console.log(thischapter_array);
 
 	res.render('backmatter', {
 		book: bookNumber,
 		endnotes: endnotes_array,
-        thischapter: thischapter_array,
+		thischapter: thischapter_array,
 		pathPrefix: pathMode
 	});
 });
