@@ -9,39 +9,44 @@
     <text><%= global.book.meta[book].booktitle %></text>
   </docTitle>
   <navMap>
-    <navPoint id="preface-1" playOrder="1">
+    <navPoint id="preface" playOrder="1">
       <navLabel>
-        <text>總序1解密時刻─一斑窺豹</text>
+        <text>解密時刻─一斑窺豹</text>
       </navLabel>
       <content src="introduction.xhtml#preface1"/>
     </navPoint>
 
-    <navPoint id="preface-2" playOrder="2">
+    <navPoint id="preface2" playOrder="2">
       <navLabel>
-        <text>總序2解密─令人心動的時刻</text>
+        <text>解密─令人心動的時刻</text>
       </navLabel>
       <content src="introduction.xhtml#preface2"/>
     </navPoint>
 
+    <navPoint id="foreword" playOrder="3">
+      <navLabel>
+        <text>前言：解密《解密時刻》</text>
+      </navLabel>
+      <content src="introduction.xhtml#foreword"/>
+    </navPoint>
+
+
     <% for (var i=0; i<global.book.chapters.length; i++){ %>
       <% if (global.book.chapters[i].book - 1 == book){ %>
-        <navPoint id="<%= global.book.chapters[i].htmlid %>" playOrder="<%= parseInt(subchapters[i]) + 2 %>">
+        <navPoint id="<%= global.book.chapters[i].htmlid %>" playOrder="<%= parseInt(global.book.chapters[i].chapter) + 4 %>">
           <navLabel>
             <text><%= global.book.chapters[i].chaptertitle %></text>
           </navLabel>
           <content src="bodymatter.xhtml#<%= global.book.chapters[i].htmlid %>"/>
-        </navPoint>
-      <% } %>
-    <% } %>
+        </navPoint><% } %><% } %>
 
-    <navPoint id="rearnotes" playOrder="<%= parseInt(currentSubchapter) + 3 %>">
+    <navPoint id="rearnotes" playOrder="<%= numberOfChapters + 4 %>">
       <navLabel>
         <text>註釋</text>
       </navLabel>
       <content src="backmatter.xhtml#rearnotes"/>
     </navPoint>
-
-    <navPoint id="afterword" playOrder="<%= parseInt(currentSubchapter) + 4 %>">
+    <navPoint id="afterword" playOrder="<%= numberOfChapters + 5 %>">
       <navLabel>
         <text>編後語</text>
       </navLabel>

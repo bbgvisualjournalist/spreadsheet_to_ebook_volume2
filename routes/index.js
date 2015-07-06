@@ -1,385 +1,346 @@
 var express = require('express');
 var router = express.Router();
 
-
 /* Display an index of the books and links to files. */
-router.get('/', function(req, res, next) {
-	var coverPhotos_array = [];
-
-	var mode = req.query.mode;
-	console.log("mode: " + mode);
-
-	//edit this for exporting to epub so that paths match up
-	//specifically for head.js with the CSS
-	var mode = req.query.mode;
-	var pathMode = '../../';
-	if (mode == 'export') {
-		pathMode = ''
-	}
-
-	for (var i = 0; i < global.book.photos.length; i++) {
-		if (global.book.photos[i].imagenumber == 0) {
-			var coverPhoto = global.book.photos[i].filename;
-			coverPhotos_array.push(coverPhoto);
-		}
-	}
-
-	res.render('index', {
-		title: 'Books',
-		cover: coverPhotos_array,
-		pathPrefix: pathMode
-	});
+router.get('/', function (req, res, next) {
+    var coverPhotos_array = [];
+    var mode = req.query.mode;
+    //console.log("mode: " + mode);
+    //edit this for exporting to epub so that paths match up
+    //specifically for head.js with the CSS
+    var pathMode = '../../';
+    if (mode === 'export') {
+        pathMode = '';
+    }
+    for (var i = 0; i < global.book.photos.length; i++) {
+        if (global.book.photos[i].imagenumber == 0) {
+            var coverPhoto = global.book.photos[i].filename;
+            coverPhotos_array.push(coverPhoto);
+        }
+    }
+    res.render('index', {
+        title: 'Books',
+        cover: coverPhotos_array,
+        pathPrefix: pathMode
+    });
 });
-
 
 /* Create content.opf. (This is an xml document so look at the source code)*/
-router.get('/book/:bookNum/content.opf', function(req, res, next) {
-	var bookNumber = parseInt(req.params.bookNum);
-	var d = new Date().toISOString();
-	d = d.replace(/\..*Z/, 'Z'); //Removes decimal values that throw errors.
+router.get('/book/:bookNum/content.opf', function (req, res, next) {
+    var bookNumber = parseInt(req.params.bookNum);
 
-	var originalPubDate = global.book.config[0].originalpubdate;
-	originalPubDateFormatted = new Date(originalPubDate).toISOString();
-	originalPubDateFormatted = originalPubDateFormatted.replace(/\..*Z/, 'Z');
+    var d = new Date().toISOString();
+    d = d.replace(/\..*Z/, 'Z'); //Removes decimal values that throw errors.
+    var originalPubDate = global.book.config[0].originalpubdate;
+    originalPubDateFormatted = new Date(originalPubDate).toISOString();
+    originalPubDateFormatted = originalPubDateFormatted.replace(/\..*Z/, 'Z');
 
-	var photos_array = [];
-	var photos_bookNumber_array = []; //Used to link to the subfolders for the images in .opf
+    var photos_array = [];
+    var photos_bookNumber_array = []; //Used to link to the subfolders for the images in .opf
 
-	for (var i = 0; i < global.book.photos.length; i++) {
-		if (bookNumber + 1 == global.book.photos[i].book) {
-			var photo = global.book.photos[i].filename;
-			var photo_bookNumber = global.book.photos[i].book;
-
-			photos_bookNumber_array.push(photo_bookNumber);
-			photos_array.push(photo);
-		} else if (global.book.photos[i].book == 0) {
-			var photo = global.book.photos[i].filename;
-			var photo_bookNumber = global.book.photos[i].book;
-
-			photos_bookNumber_array.push(photo_bookNumber);
-			photos_array.push(photo);
-			console.log(photo);
-		}
-	}
-
-	res.render('content', {
-		book: bookNumber,
-		photos: photos_array,
-		photos_bookNumber: photos_bookNumber_array,
-		date: d,
-		pubDate: originalPubDateFormatted
-	});
+    for (var i = 0; i < global.book.photos.length; i++) {
+        if (bookNumber + 1 == global.book.photos[i].book) {
+            var photo = global.book.photos[i].filename;
+            var photo_bookNumber = global.book.photos[i].book;
+            photos_bookNumber_array.push(photo_bookNumber);
+            photos_array.push(photo);
+        /*} else if (global.book.photos[i].book == 0) {
+    var photo = global.book.photos[i].filename;
+    var photo_bookNumber = global.book.photos[i].book;
+    photos_bookNumber_array.push(photo_bookNumber);
+    photos_array.push(photo);*/
+            //console.log(photo);
+        }
+    }
+    res.render('content', {
+        book: bookNumber,
+        photos: photos_array,
+        photos_bookNumber: photos_bookNumber_array,
+        date: d,
+        pubDate: originalPubDateFormatted
+    });
 });
-
 
 /* Display cover.xhtml. */
-router.get('/book/:bookNum/cover.xhtml', function(req, res, next) {
-	var bookNumber = parseInt(req.params.bookNum);
-
-	//edit this for exporting to epub so that paths match up
-	//specifically for head.js with the CSS
-	var mode = req.query.mode;
-	var pathMode = '../../';
-	if (mode == 'export') {
-		pathMode = ''
-	}
-
-	res.render('cover', {
-		book: bookNumber,
-		pathPrefix: pathMode
-	});
+router.get('/book/:bookNum/cover.xhtml', function (req, res, next) {
+    var bookNumber = parseInt(req.params.bookNum);
+    //edit this for exporting to epub so that paths match up
+    //specifically for head.js with the CSS
+    var mode = req.query.mode;
+    var pathMode = '../../';
+    if (mode == 'export') {
+        pathMode = ''
+    }
+    res.render('cover', {
+        book: bookNumber,
+        pathPrefix: pathMode
+    });
 });
-
 
 /* Display titlepage.xhtml. */
-router.get('/book/:bookNum/titlepage.xhtml', function(req, res, next) {
-	var bookNumber = parseInt(req.params.bookNum);
-
-	//edit this for exporting to epub so that paths match up
-	//specifically for head.js with the CSS
-	var mode = req.query.mode;
-	var pathMode = '../../';
-	if (mode == 'export') {
-		pathMode = ''
-	}
-
-	res.render('titlepage', {
-		book: bookNumber,
-		pathPrefix: pathMode
-	});
+router.get('/book/:bookNum/titlepage.xhtml', function (req, res, next) {
+    var bookNumber = parseInt(req.params.bookNum);
+    //edit this for exporting to epub so that paths match up
+    //specifically for head.js with the CSS
+    var mode = req.query.mode;
+    var pathMode = '../../';
+    if (mode == 'export') {
+        pathMode = ''
+    }
+    res.render('titlepage', {
+        book: bookNumber,
+        pathPrefix: pathMode
+    });
 });
-
 
 /* Display toc.xhtml. */
-router.get('/book/:bookNum/toc.xhtml', function(req, res, next) {
-	var bookNumber = parseInt(req.params.bookNum);
-
-	//edit this for exporting to epub so that paths match up
-	//specifically for head.js with the CSS
-	var mode = req.query.mode;
-	var pathMode = '../../';
-	if (mode == 'export') {
-		pathMode = ''
-	}
-
-	//Create a custom object for each book.
-	var currentBook = [];
-	console.log('Isolating this book.')
-	for (var i = 0; i < global.book.chapters.length; i++) {
-		if (global.book.chapters[i].book - 1 == bookNumber) {
-			currentBook.push(global.book.chapters[i]);
-		}
-	}
-
-	//split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
-	console.log('Splitting the book into chapters.')
-	var currentChapter = 1;
-	var chapters = [];
-	var chapter = [];
-	var book = []
-	for (i = 1; i < currentBook.length; i++) {
-		if (currentBook[i].chapter == currentChapter) {
-			chapter.push(currentBook[i])
-		} else {
-			chapters.push(chapter);
-			currentChapter++;
-			chapter = [];
-			chapter.push(currentBook[i]);
-		}
-	}
-	chapters.push(chapter);
-	console.log(chapters);
-
-
-	res.render('toc', {
-		book: bookNumber,
-		bookIntro: currentBook[0],
-		chapters: chapters,
-		pathPrefix: pathMode
-	});
+router.get('/book/:bookNum/toc.xhtml', function (req, res, next) {
+    var bookNumber = parseInt(req.params.bookNum);
+    //edit this for exporting to epub so that paths match up
+    //specifically for head.js with the CSS
+    var mode = req.query.mode;
+    var pathMode = '../../';
+    if (mode == 'export') {
+        pathMode = ''
+    }
+    //Create a custom object for each book.
+    var currentBook = [];
+    //console.log('Isolating this book.')
+    for (var i = 0; i < global.book.chapters.length; i++) {
+        if (global.book.chapters[i].book - 1 == bookNumber) {
+            currentBook.push(global.book.chapters[i]);
+        }
+    }
+    //split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
+    //console.log('Splitting the book into chapters.')
+    var currentChapter = 1;
+    var chapters = [];
+    var chapter = [];
+    var book = []
+    for (i = 1; i < currentBook.length; i++) {
+        if (currentBook[i].chapter == currentChapter) {
+            chapter.push(currentBook[i])
+        } else {
+            chapters.push(chapter);
+            currentChapter++;
+            chapter = [];
+            chapter.push(currentBook[i]);
+        }
+    }
+    chapters.push(chapter);
+    //console.log(chapters);
+    res.render('toc', {
+        book: bookNumber,
+        bookIntro: currentBook[0],
+        chapters: chapters,
+        pathPrefix: pathMode
+    });
 });
-
 
 /* Display toc.ncx. */
-router.get('/book/:bookNum/toc.ncx', function(req, res, next) {
-	var bookNumber = parseInt(req.params.bookNum);
-	var numberOfChapters = 0;
+router.get('/book/:bookNum/toc.ncx', function (req, res, next) {
+    var bookNumber = parseInt(req.params.bookNum);
+    var numberOfChapters = 0;
+    var numberOfSubchapters = 0;
+    var subchapter_array = [];
+    var currentSubchapter = 0;
 
-
-	for (var i = 0; i < global.book.chapters.length; i++) {
-		if (global.book.chapters[i].book - 1 == bookNumber) {
-			numberOfChapters++;
-		}
-	}
-
-
-
-	//edit this for exporting to epub so that paths match up
-	//specifically for head.js with the CSS
-	var mode = req.query.mode;
-	var pathMode = '../../';
-	if (mode == 'export') {
-		pathMode = ''
-	}
-
-	res.render('tocncx', {
-		book: bookNumber,
-		pathPrefix: pathMode,
-		numberOfChapters: numberOfChapters
-	});
+    for (var i = 0; i < global.book.chapters.length; i++) {
+        if (global.book.chapters[i].book - 1 == bookNumber) {
+            numberOfChapters++;
+        }
+        if (global.book.chapters[i].book - 1 == bookNumber) {
+            if (global.book.chapters[i].chapter == 0) {
+                currentSubchapter = parseInt(global.book.chapters[i].subchapter) + 1;
+            } else {
+                currentSubchapter = parseInt(global.book.chapters[i].subchapter) + 2;
+            }
+            subchapter_array.push(currentSubchapter);
+        }
+    }
+    //edit this for exporting to epub so that paths match up
+    //specifically for head.js with the CSS
+    var mode = req.query.mode;
+    var pathMode = '../../';
+    if (mode == 'export') {
+        pathMode = ''
+    }
+    res.render('tocncx', {
+        book: bookNumber,
+        pathPrefix: pathMode,
+        numberOfChapters: numberOfChapters,
+        currentSubchapter: currentSubchapter,
+        subchapters: subchapter_array
+    });
 });
-
 
 /* Display introduction.xhtml. */
-router.get('/book/:bookNum/introduction.xhtml', function(req, res, next) {
-	var bookNumber = parseInt(req.params.bookNum);
-	var picture_array = [];
-
-	//edit this for exporting to epub so that paths match up
-	//specifically for head.js with the CSS
-	var mode = req.query.mode;
-	var pathMode = '../../';
-	if (mode == 'export') {
-		pathMode = ''
-	}
-
-	//create code snippets for each photo, alt tag, caption and credit.
-	for (var i = 0; i < global.book.photos.length; i++) {
-		if (global.book.photos[i].book == 0) {
-			var picture = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
-			picture_array.push(picture);
-		}
-	}
-
-	console.log('PICTURE ARRAY: ')
-	console.log(picture_array);
-
-	res.render('introduction', {
-		book: bookNumber,
-		picture: picture_array,
-		pathPrefix: pathMode
-	});
+router.get('/book/:bookNum/introduction.xhtml', function (req, res, next) {
+    var bookNumber = parseInt(req.params.bookNum);
+    var picture_array = [];
+    //edit this for exporting to epub so that paths match up
+    //specifically for head.js with the CSS
+    var mode = req.query.mode;
+    var pathMode = '../../';
+    if (mode == 'export') {
+        pathMode = ''
+    }
+    //create code snippets for each photo, alt tag, caption and credit.
+    for (var i = 0; i < global.book.photos.length; i++) {
+        if (global.book.photos[i].book == 0) {
+            var picture = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
+            picture_array.push(picture);
+        }
+    }
+    //console.log('PICTURE ARRAY: ')
+    //console.log(picture_array);
+    res.render('introduction', {
+        book: bookNumber,
+        picture: picture_array,
+        pathPrefix: pathMode
+    });
 });
-
 
 /* Display bodymatter.xhtml. */
-router.get('/book/:bookNum/bodymatter.xhtml', function(req, res, next) {
-	var bookNumber = parseInt(req.params.bookNum);
-	var partials_array = [];
-	var photos_array = [];
-	var titles_array = [];
-	var chapterID_array = [];
-
-	//edit this for exporting to epub so that paths match up
-	//specifically for head.js with the CSS
-	var mode = req.query.mode;
-	var pathMode = '../../';
-	if (mode == 'export') {
-		pathMode = ''
-	}
-
-	//set variables for the introduction to each book
-	var intro = "partials/content/book" + (bookNumber + 1) + "/overview.ejs";
-
-	//Create a custom object for each book.
-	var currentBook = [];
-	console.log('Isolating book number ' + (bookNumber + 1))
-	for (var i = 0; i < global.book.chapters.length; i++) {
-		if (global.book.chapters[i].book - 1 == bookNumber) {
-			currentBook.push(global.book.chapters[i]);
-		}
-	}
-	//console.log('-------------')
-	//console.log(currentBook);
-	//console.log('-------------')
-	//console.log('global.book.chapters.length: ' + global.book.chapters.length)
-
-	//split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
-	console.log('Splitting book into chapters.')
-		//console.log(currentBook.length)
-		//error for book two happens between here and partials array!!!!!!!
-	var currentChapter = 1;
-	var chapters = [];
-	var chapter = [];
-	for (i = 1; i < currentBook.length; i++) {
-		if (currentBook[i].chapter == currentChapter) {
-			chapter.push(currentBook[i]);
-			//console.log(chapter)
-		} else {
-			chapters.push(chapter);
-			currentChapter++;
-			//console.log(currentChapter);
-			chapter = [];
-			chapter.push(currentBook[i]);
-		}
-	}
-
-	chapters.push(chapter);
-	console.log('-------------');
-	console.log('chapters length: ' + chapters.length);
-	//console.log('-------------')
-	//console.log(chapters);
-	//console.log('-------------')
-
-	//loop through all the objects in the chapters array
-	for (i = 0; i < chapters.length; i++) {
-		for (y = 0; y < chapters[i].length; y++) {
-			//populate array of chapter titles
-			titles_array.push(chapters[i][y].chaptertitle);
-			//populate array of title anchor tags for toc
-			chapterID_array.push(chapters[i][y].htmlid);
-			//create code snippets for each chapter's content
-			if (chapters[i][y].indent == 1) {
-				var copy = 'partials/content/book' + (bookNumber + 1) + '/chapter' + (chapters[i][y].chapter) + '.ejs';
-				//console.log('-------------');
-				//console.log(copy);
-				partials_array.push(copy);
-			}
-
-			//console.log("Book#" + chapters[i][y].book + " :: section#" + chapters[i][y].subchapter + " :: " + chapters[i][y].chaptertitle);
-		}
-		//console.log(i + ": " + partials_array[i]);
-	}
-	//console.log('partials_array')
-	//console.log(partials_array);
-
-	//console.log(titles_array.length);
-
-	//create code snippets for each photo, alt tag, caption and credit.
-	for (var i = 0; i < global.book.photos.length; i++) {
-		if (bookNumber + 1 == global.book.photos[i].book) {
-			var photo = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
-			photos_array.push(photo);
-		}
-	}
-	//console.log(photos_array);
-
-	res.render('bodymatter', {
-		book: bookNumber,
-		intro: intro,
-		chapters: chapters,
-		titles: titles_array,
-		chapter_ID: chapterID_array,
-		partials: partials_array,
-		photo: photos_array,
-		pathPrefix: pathMode
-	});
-
+router.get('/book/:bookNum/bodymatter.xhtml', function (req, res, next) {
+    var bookNumber = parseInt(req.params.bookNum);
+    var partials_array = [];
+    var photos_array = [];
+    var titles_array = [];
+    var chapterID_array = [];
+    //edit this for exporting to epub so that paths match up
+    //specifically for head.js with the CSS
+    var mode = req.query.mode;
+    var pathMode = '../../';
+    if (mode == 'export') {
+        pathMode = ''
+    }
+    //set variables for the introduction to each book
+    var intro = "partials/content/book" + (bookNumber + 1) + "/overview.ejs";
+    //Create a custom object for each book.
+    var currentBook = [];
+    //console.log('Isolating book number ' + (bookNumber + 1))
+    for (var i = 0; i < global.book.chapters.length; i++) {
+        if (global.book.chapters[i].book - 1 == bookNumber) {
+            currentBook.push(global.book.chapters[i]);
+        }
+    }
+    //console.log('-------------')
+    //console.log(currentBook);
+    //console.log('-------------')
+    //console.log('global.book.chapters.length: ' + global.book.chapters.length)
+    //split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
+    //console.log('Splitting book into chapters.')
+    //console.log(currentBook.length)
+    //error for book two happens between here and partials array!!!!!!!
+    var currentChapter = 1;
+    var chapters = [];
+    var chapter = [];
+    for (i = 1; i < currentBook.length; i++) {
+        if (currentBook[i].chapter == currentChapter) {
+            chapter.push(currentBook[i]);
+            //console.log(chapter)
+        } else {
+            chapters.push(chapter);
+            currentChapter++;
+            //console.log(currentChapter);
+            chapter = [];
+            chapter.push(currentBook[i]);
+        }
+    }
+    chapters.push(chapter);
+    //console.log('-------------');
+    //console.log('chapters length: ' + chapters.length);
+    //console.log('-------------')
+    //console.log(chapters);
+    //console.log('-------------')
+    //loop through all the objects in the chapters array
+    for (i = 0; i < chapters.length; i++) {
+        for (y = 0; y < chapters[i].length; y++) {
+            //populate array of chapter titles
+            titles_array.push(chapters[i][y].chaptertitle);
+            //populate array of title anchor tags for toc
+            chapterID_array.push(chapters[i][y].htmlid);
+            //create code snippets for each chapter's content
+            if (chapters[i][y].indent == 1) {
+                var copy = 'partials/content/book' + (bookNumber + 1) + '/chapter' + (chapters[i][y].chapter) + '.ejs';
+                //console.log('-------------');
+                //console.log(copy);
+                partials_array.push(copy);
+            }
+            //console.log("Book#" + chapters[i][y].book + " :: section#" + chapters[i][y].subchapter + " :: " + chapters[i][y].chaptertitle);
+        }
+        //console.log(i + ": " + partials_array[i]);
+    }
+    //console.log('partials_array')
+    //console.log(partials_array);
+    //console.log(titles_array.length);
+    //create code snippets for each photo, alt tag, caption and credit.
+    for (var i = 0; i < global.book.photos.length; i++) {
+        if (bookNumber + 1 == global.book.photos[i].book) {
+            var photo = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
+            photos_array.push(photo);
+        }
+    }
+    //console.log(photos_array);
+    res.render('bodymatter', {
+        book: bookNumber,
+        intro: intro,
+        chapters: chapters,
+        titles: titles_array,
+        chapter_ID: chapterID_array,
+        partials: partials_array,
+        photo: photos_array,
+        pathPrefix: pathMode
+    });
 });
-
 
 /* Display the backmatter.xhtml. */
-router.get('/book/:bookNum/backmatter.xhtml', function(req, res, next) {
-	var bookNumber = parseInt(req.params.bookNum);
-	var endnotes_array = [];
-	var thischapter_array = [];
-
-	//edit this for exporting to epub so that paths match up
-	//specifically for head.js with the CSS
-	var mode = req.query.mode;
-	var pathMode = '../../';
-	if (mode == 'export') {
-		pathMode = ''
-	}
-
-	//Create a custom object for each book.
-	var currentBook = [];
-	console.log('Isolating book number ' + (bookNumber + 1))
-	for (var i = 0; i < global.book.chapters_meta.length; i++) {
-		if (global.book.chapters_meta[i].booknumber - 1 == bookNumber) {
-			currentBook.push(global.book.chapters_meta[i]);
-		}
-	}
-	//console.log('-------------')
-	//console.log(currentBook);
-
-	//loop through all the objects in the current book array
-	for (i = 0; i < currentBook.length; i++) {
-		var this_book = global.book.chapters_meta[i].booknumber;
-		var this_chapter = global.book.chapters_meta[i].chapternumber;
-		if (this_chapter == 0) {
-			//set variables for the introduction to each book
-			var endnotes = 'partials/content/book' + (this_book) + '/overviewBacknotes.ejs';
-			endnotes_array.push(endnotes);
-			thischapter_array.push(this_chapter);
-		} else {
-			var endnotes = 'partials/content/book' + (this_book) + '/back' + (this_chapter) + '.ejs';
-			endnotes_array.push(endnotes);
-			thischapter_array.push(this_chapter);
-		}
-	}
-
-	//console.log('ENDNOTES ARRAY -------------');
-	//console.log(endnotes_array);
-	//console.log('THIS CHAPTER ARRAY -------------');
-	//console.log(thischapter_array);
-
-	res.render('backmatter', {
-		book: bookNumber,
-		endnotes: endnotes_array,
-		thischapter: thischapter_array,
-		pathPrefix: pathMode
-	});
+router.get('/book/:bookNum/backmatter.xhtml', function (req, res, next) {
+    var bookNumber = parseInt(req.params.bookNum);
+    var endnotes_array = [];
+    var thischapter_array = [];
+    //edit this for exporting to epub so that paths match up
+    //specifically for head.js with the CSS
+    var mode = req.query.mode;
+    var pathMode = '../../';
+    if (mode == 'export') {
+        pathMode = ''
+    }
+    //Create a custom object for each book.
+    var currentBook = [];
+    //console.log('Isolating book number ' + (bookNumber + 1));
+    for (var i = 0; i < global.book.chapters_meta.length; i++) {
+        if (global.book.chapters_meta[i].booknumber - 1 == bookNumber) {
+            currentBook.push(global.book.chapters_meta[i]);
+        }
+    }
+    //console.log('-------------')
+    //console.log(currentBook);
+    //loop through all the objects in the current book array
+    for (i = 0; i < currentBook.length; i++) {
+        var this_book = global.book.chapters_meta[i].booknumber;
+        var this_chapter = global.book.chapters_meta[i].chapternumber;
+        if (this_chapter == 0) {
+            //set variables for the introduction to each book
+            var endnotes = 'partials/content/book' + (this_book) + '/overviewBacknotes.ejs';
+            endnotes_array.push(endnotes);
+            thischapter_array.push(this_chapter);
+        } else {
+            var endnotes = 'partials/content/book' + (this_book) + '/back' + (this_chapter) + '.ejs';
+            endnotes_array.push(endnotes);
+            thischapter_array.push(this_chapter);
+        }
+    }
+    //console.log('ENDNOTES ARRAY -------------');
+    //console.log(endnotes_array);
+    //console.log('THIS CHAPTER ARRAY -------------');
+    //console.log(thischapter_array);
+    res.render('backmatter', {
+        book: bookNumber,
+        endnotes: endnotes_array,
+        thischapter: thischapter_array,
+        pathPrefix: pathMode
+    });
 });
-
 module.exports = router;
