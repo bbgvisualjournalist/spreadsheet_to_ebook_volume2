@@ -17,12 +17,10 @@
 
 			<% for (var i=0; i<global.book.chapters.length; i++){ %>
 				<% if (global.book.chapters[i].book - 1 == book){ %>
-
 					<li class="toc-<%= global.book.chapters[i].indent%>">
 						<a href="bodymatter.xhtml#<%= global.book.chapters[i].htmlid %>"><%= global.book.chapters[i].chaptertitle %></a>
 					</li>
-				<% } %>
-			<% } %>
+				<% }; } %>
 
 			<li class="toc-1">
 				<a href="backmatter.xhtml#rearnotes">註釋</a>

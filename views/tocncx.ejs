@@ -23,25 +23,23 @@
       <content src="introduction.xhtml#preface2"/>
     </navPoint>
 
-    <% for (var i=0; i<global.book.chapters.length; i++){ %>
-      <% if (global.book.chapters[i].book - 1 == book){ %>
-        <navPoint id="<%= global.book.chapters[i].htmlid %>" playOrder="<%= parseInt(subchapters[i]) + 2 %>">
+    <% for (var i = 0; i < currentBook.length; i++){ %>
+        <navPoint id="<%= currentBook[i].htmlid %>" playOrder="<%- playOrder[i] %>">
           <navLabel>
-            <text><%= global.book.chapters[i].chaptertitle %></text>
+            <text><%= currentBook[i].chaptertitle %></text>
           </navLabel>
-          <content src="bodymatter.xhtml#<%= global.book.chapters[i].htmlid %>"/>
+          <content src="bodymatter.xhtml#<%= currentBook[i].htmlid %>"/>
         </navPoint>
-      <% } %>
     <% } %>
 
-    <navPoint id="rearnotes" playOrder="<%= parseInt(currentSubchapter) + 3 %>">
+    <navPoint id="rearnotes" playOrder="<%= playOrder.length + 3 %>">
       <navLabel>
         <text>註釋</text>
       </navLabel>
       <content src="backmatter.xhtml#rearnotes"/>
     </navPoint>
 
-    <navPoint id="afterword" playOrder="<%= parseInt(currentSubchapter) + 4 %>">
+    <navPoint id="afterword" playOrder="<%= playOrder.length + 4 %>">
       <navLabel>
         <text>編後語</text>
       </navLabel>

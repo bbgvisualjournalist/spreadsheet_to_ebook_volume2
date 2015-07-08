@@ -12,7 +12,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "0",
+    "subchapter": "1",
     "chaptertitle": "一 天災還是人禍",
     "chaptertitleenglish": "A natural or man-made disasters",
     "htmlid": "start0",
@@ -22,7 +22,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "1",
+    "subchapter": "2",
     "chaptertitle": "“大躍進”導致大倒退",
     "chaptertitleenglish": "\"Great Leap Forward\" lead to a retrogression",
     "htmlid": "part1",
@@ -32,7 +32,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "2",
+    "subchapter": "3",
     "chaptertitle": "瞎指揮，國家經濟亂了套",
     "chaptertitleenglish": "Whim, national economic disarray",
     "htmlid": "part2",
@@ -42,7 +42,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "3",
+    "subchapter": "4",
     "chaptertitle": "浮誇衛星上天，饑民坐以待斃",
     "chaptertitleenglish": "Pompous satellite into space, sit still hungry",
     "htmlid": "part3",
@@ -52,7 +52,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "4",
+    "subchapter": "5",
     "chaptertitle": "公共食堂，觸發災難的最後一擊",
     "chaptertitleenglish": "Public canteens, triggering a disaster final blow",
     "htmlid": "part4",
@@ -62,7 +62,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "5",
+    "subchapter": "6",
     "chaptertitle": "中央通令堵盲流，饑民生路被阻斷",
     "chaptertitleenglish": "Central circular blocking jobless, hungry way out is blocked",
     "htmlid": "part5",
@@ -72,7 +72,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "6",
+    "subchapter": "7",
     "chaptertitle": "哀鴻遍千里，糧倉無人開",
     "chaptertitleenglish": "Aihong over thousands of miles, no open barn",
     "htmlid": "part6",
@@ -82,7 +82,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "7",
+    "subchapter": "8",
     "chaptertitle": "饑荒三年風調雨順，歸罪老天有失公允",
     "chaptertitleenglish": "Three years of famine for good weather, blaming God unfair",
     "htmlid": "part7",
@@ -92,7 +92,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "8",
+    "subchapter": "9",
     "chaptertitle": "蘇聯逼債子虛烏有，雪中送炭難能可貴",
     "chaptertitleenglish": "Soviet dun imaginary, timely commendable",
     "htmlid": "part8",
@@ -102,7 +102,7 @@
   {
     "book": "1",
     "chapter": "1",
-    "subchapter": "9",
+    "subchapter": "10",
     "chaptertitle": "餓殍載道阻不住糧食外援創新高",
     "chaptertitleenglish": "Starving contained Road dissuaded food aid highs",
     "htmlid": "part9",
@@ -112,7 +112,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "10",
+    "subchapter": "11",
     "chaptertitle": "二  死人不是數字遊戲",
     "chaptertitleenglish": "Two dead is not a numbers game",
     "htmlid": "start10",
@@ -122,7 +122,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "11",
+    "subchapter": "12",
     "chaptertitle": "重災區死人六之有一",
     "chaptertitleenglish": "Dead six of the hardest hit with a",
     "htmlid": "part11",
@@ -132,7 +132,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "12",
+    "subchapter": "13",
     "chaptertitle": "死亡數字的來歷",
     "chaptertitleenglish": "Death toll of origin",
     "htmlid": "part12",
@@ -142,7 +142,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "13",
+    "subchapter": "14",
     "chaptertitle": "饑荒比戰爭兇殘百倍",
     "chaptertitleenglish": "Famine times cruel than war",
     "htmlid": "part13",
@@ -152,7 +152,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "14",
+    "subchapter": "15",
     "chaptertitle": "人吃人—並非傳說",
     "chaptertitleenglish": "Cannibalism - not a legend",
     "htmlid": "part14",
@@ -162,7 +162,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "15",
+    "subchapter": "16",
     "chaptertitle": "封鎖饑荒消息 拒絕外國援助",
     "chaptertitleenglish": "Blockade famine message rejection of foreign aid",
     "htmlid": "part15",
@@ -172,7 +172,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "16",
+    "subchapter": "17",
     "chaptertitle": "“餓死”與“病死”之間的奧秘",
     "chaptertitleenglish": "Mystery \"starve\" and \"dead\" between",
     "htmlid": "part16",
@@ -182,7 +182,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "17",
+    "subchapter": "18",
     "chaptertitle": "糧食分配，農民總在隊尾",
     "chaptertitleenglish": "Food distribution, total farmers in the tail",
     "htmlid": "part17",
@@ -192,7 +192,7 @@
   {
     "book": "1",
     "chapter": "2",
-    "subchapter": "18",
+    "subchapter": "19",
     "chaptertitle": "高層秘密決定：犧牲農村，保證城市",
     "chaptertitleenglish": "Top secret decision: to sacrifice rural areas, to ensure the city",
     "htmlid": "part18",
@@ -202,7 +202,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "19",
+    "subchapter": "20",
     "chaptertitle": "三  誰騙誰?",
     "chaptertitleenglish": "Three of whom kidding?",
     "htmlid": "start19",
@@ -212,7 +212,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "20",
+    "subchapter": "21",
     "chaptertitle": "省委書記的膽量：隱瞞災情，扣壓最高指示",
     "chaptertitleenglish": "Party Secretary of courage: to conceal the disaster, withholding highest order",
     "htmlid": "part20",
@@ -222,7 +222,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "21",
+    "subchapter": "22",
     "chaptertitle": "在謊言世界裡，誰說實話誰挨整",
     "chaptertitleenglish": "In a world of lies, who says the truth who Punished",
     "htmlid": "part21",
@@ -232,7 +232,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "22",
+    "subchapter": "23",
     "chaptertitle": "五風肆虐，誠信滅跡",
     "chaptertitleenglish": "Five wind raging, integrity off track",
     "htmlid": "part22",
@@ -242,7 +242,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "23",
+    "subchapter": "24",
     "chaptertitle": "大科學家宣揚偽科學",
     "chaptertitleenglish": "Great scientists to promote pseudoscience",
     "htmlid": "part23",
@@ -252,7 +252,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "24",
+    "subchapter": "25",
     "chaptertitle": "鄧子恢因保守被撤職",
     "chaptertitleenglish": "Teng was dismissed by conservative",
     "htmlid": "part24",
@@ -262,7 +262,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "25",
+    "subchapter": "26",
     "chaptertitle": "一張餅就可誘姦婦女",
     "chaptertitleenglish": "A cake can seduce women",
     "htmlid": "part25",
@@ -272,7 +272,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "26",
+    "subchapter": "27",
     "chaptertitle": "人民公僕：吃著雞鴨魚肉，談論百萬餓殍",
     "chaptertitleenglish": "Public servants: eating poultry meat, talk about one million starving",
     "htmlid": "part26",
@@ -282,7 +282,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "27",
+    "subchapter": "28",
     "chaptertitle": "面對饑荒，中央堅持徵購標準不變",
     "chaptertitleenglish": "Faced with famine, the central procurement adhere to the same standards",
     "htmlid": "part27",
@@ -292,7 +292,7 @@
   {
     "book": "1",
     "chapter": "3",
-    "subchapter": "28",
+    "subchapter": "29",
     "chaptertitle": "附錄：給六級幹部的公開信（毛澤東）",
     "chaptertitleenglish": "Appendix: Open Letter (Mao Zedong) six cadres",
     "htmlid": "part28",
@@ -302,7 +302,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "29",
+    "subchapter": "30",
     "chaptertitle": "四  中共高層與大饑荒",
     "chaptertitleenglish": "Four CPC leadership and the great famine",
     "htmlid": "start29",
@@ -312,7 +312,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "30",
+    "subchapter": "31",
     "chaptertitle": "周恩來下令銷毀死人數據",
     "chaptertitleenglish": "Zhou Enlai ordered the destruction of dead data",
     "htmlid": "part30",
@@ -322,7 +322,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "31",
+    "subchapter": "32",
     "chaptertitle": "欺上瞞下常態化",
     "chaptertitleenglish": "Qishangmanxia normalization",
     "htmlid": "part31",
@@ -332,7 +332,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "32",
+    "subchapter": "33",
     "chaptertitle": "信陽催糧路遇餓殍，李先念下車失聲痛哭",
     "chaptertitleenglish": "Lu Yu Xinyang reminders grain starving, tears off Xiannian",
     "htmlid": "part32",
@@ -342,7 +342,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "33",
+    "subchapter": "34",
     "chaptertitle": "“寧可四川餓死人，不可北京餓死人”",
     "chaptertitleenglish": "\"I would rather starve to death in Sichuan people, not Beijing people starved to death.\"",
     "htmlid": "part33",
@@ -352,7 +352,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "34",
+    "subchapter": "35",
     "chaptertitle": "鄧小平庇護李井泉",
     "chaptertitleenglish": "Deng Xiaoping Asylum Project Leadership Committee",
     "htmlid": "part34",
@@ -362,7 +362,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "35",
+    "subchapter": "36",
     "chaptertitle": "蹲點調查，劉少奇立場大轉變",
     "chaptertitleenglish": "Months of investigation, Liu Shaoqi big change position",
     "htmlid": "part35",
@@ -372,7 +372,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "36",
+    "subchapter": "37",
     "chaptertitle": "毛澤東對公共食堂情有獨鍾",
     "chaptertitleenglish": "Mao soft spot for public canteens",
     "htmlid": "part36",
@@ -382,7 +382,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "37",
+    "subchapter": "38",
     "chaptertitle": "毛澤東的唯意志論情結",
     "chaptertitleenglish": "Mao's voluntarism Complex",
     "htmlid": "part37",
@@ -392,7 +392,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "38",
+    "subchapter": "39",
     "chaptertitle": "大饑荒與國民黨何干？",
     "chaptertitleenglish": "Great Famine and the KMT ware?",
     "htmlid": "part38",
@@ -402,7 +402,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "39",
+    "subchapter": "40",
     "chaptertitle": "毛澤東如何與民共渡時艱？",
     "chaptertitleenglish": "How Mao Zedong and the people ride the storm?",
     "htmlid": "part39",
@@ -412,7 +412,7 @@
   {
     "book": "1",
     "chapter": "4",
-    "subchapter": "40",
+    "subchapter": "41",
     "chaptertitle": "附錄：毛澤東的作文《心之力》全文：",
     "chaptertitleenglish": "Appendix: Mao's essay \"heart of power\" in full:",
     "htmlid": "part40",
@@ -422,7 +422,7 @@
   {
     "book": "1",
     "chapter": "5",
-    "subchapter": "41",
+    "subchapter": "42",
     "chaptertitle": "五  誰該為數千萬條生命負責？",
     "chaptertitleenglish": "Five who should be responsible for tens of millions of lives?",
     "htmlid": "start41",
@@ -432,7 +432,7 @@
   {
     "book": "1",
     "chapter": "5",
-    "subchapter": "42",
+    "subchapter": "43",
     "chaptertitle": "毛、劉關係出現嚴重裂痕",
     "chaptertitleenglish": "Mao, Liu relationship serious rift",
     "htmlid": "part42",
@@ -442,7 +442,7 @@
   {
     "book": "1",
     "chapter": "5",
-    "subchapter": "43",
+    "subchapter": "44",
     "chaptertitle": "饑荒—分裂—文革 不幸的政治鏈條",
     "chaptertitleenglish": "Famine - split - the Cultural Revolution unfortunate political chain",
     "htmlid": "part43",
@@ -452,7 +452,7 @@
   {
     "book": "1",
     "chapter": "5",
-    "subchapter": "44",
+    "subchapter": "45",
     "chaptertitle": "“艄公”的尊嚴不可冒犯",
     "chaptertitleenglish": "\"Skipper\" inviolable dignity",
     "htmlid": "part44",
@@ -462,7 +462,7 @@
   {
     "book": "1",
     "chapter": "5",
-    "subchapter": "45",
+    "subchapter": "46",
     "chaptertitle": "周恩來的世故與圓滑",
     "chaptertitleenglish": "Zhou Enlai's sophisticated and sleek",
     "htmlid": "part45",
@@ -472,7 +472,7 @@
   {
     "book": "1",
     "chapter": "5",
-    "subchapter": "46",
+    "subchapter": "47",
     "chaptertitle": "林彪如何博得毛的信賴",
     "chaptertitleenglish": "How to win the trust of Lin Biao Mao",
     "htmlid": "part46",
@@ -482,7 +482,7 @@
   {
     "book": "1",
     "chapter": "5",
-    "subchapter": "47",
+    "subchapter": "48",
     "chaptertitle": "昔日英雄變家奴",
     "chaptertitleenglish": "Former hero become slaves",
     "htmlid": "part47",
@@ -492,7 +492,7 @@
   {
     "book": "1",
     "chapter": "5",
-    "subchapter": "48",
+    "subchapter": "49",
     "chaptertitle": "無人為幾千萬生命承擔責任",
     "chaptertitleenglish": "Nobody held responsible for tens of millions of lives",
     "htmlid": "part48",
@@ -502,7 +502,7 @@
   {
     "book": "1",
     "chapter": "5",
-    "subchapter": "49",
+    "subchapter": "50",
     "chaptertitle": "大饑荒調查，步履維艱",
     "chaptertitleenglish": "Great Famine investigation, struggling",
     "htmlid": "part49",
@@ -522,7 +522,7 @@
   {
     "book": "2",
     "chapter": "1",
-    "subchapter": "0",
+    "subchapter": "1",
     "chaptertitle": "一 保與不保的匠心獨運",
     "chaptertitleenglish": "A guarantee and does not guarantee imaginative",
     "htmlid": "start0",
@@ -532,7 +532,7 @@
   {
     "book": "2",
     "chapter": "1",
-    "subchapter": "1",
+    "subchapter": "2",
     "chaptertitle": "迫害劉少奇是周最大的污點",
     "chaptertitleenglish": "Liu Shaoqi was persecuted biggest blot week",
     "htmlid": "part1",
@@ -542,7 +542,7 @@
   {
     "book": "2",
     "chapter": "1",
-    "subchapter": "2",
+    "subchapter": "3",
     "chaptertitle": "林彪當副帥是周舉薦的",
     "chaptertitleenglish": "Zhou Lin Biao when nominating Fushuai",
     "htmlid": "part2",
@@ -552,7 +552,7 @@
   {
     "book": "2",
     "chapter": "1",
-    "subchapter": "3",
+    "subchapter": "4",
     "chaptertitle": "周與鄧，盟友還是對手？",
     "chaptertitleenglish": "Zhou and Deng, allies or rivals?",
     "htmlid": "part3",
@@ -562,7 +562,7 @@
   {
     "book": "2",
     "chapter": "1",
-    "subchapter": "4",
+    "subchapter": "5",
     "chaptertitle": "批朱毫不容情，稱其“定時炸彈”",
     "chaptertitleenglish": "Zhu granted no mercy, saying \"time bomb\"",
     "htmlid": "part4",
@@ -572,7 +572,7 @@
   {
     "book": "2",
     "chapter": "1",
-    "subchapter": "5",
+    "subchapter": "6",
     "chaptertitle": "挺身保陳毅，為陳也為己",
     "chaptertitleenglish": "Come forward Paul Chen Yi, Chen also for himself",
     "htmlid": "part5",
@@ -582,7 +582,7 @@
   {
     "book": "2",
     "chapter": "1",
-    "subchapter": "6",
+    "subchapter": "7",
     "chaptertitle": "賀龍倒台的真相",
     "chaptertitleenglish": "Long downfall of truth",
     "htmlid": "part6",
@@ -592,7 +592,7 @@
   {
     "book": "2",
     "chapter": "1",
-    "subchapter": "7",
+    "subchapter": "8",
     "chaptertitle": "一份檔案把紀登奎嚇出一身冷汗",
     "chaptertitleenglish": "A dossier to Ji Dengkui cold sweats",
     "htmlid": "part7",
@@ -602,7 +602,7 @@
   {
     "book": "2",
     "chapter": "1",
-    "subchapter": "8",
+    "subchapter": "9",
     "chaptertitle": " 附錄：周恩來指使造反派打陳雲保李先念（姚監復）",
     "chaptertitleenglish": " Appendix: Zhou Enlai ordered the rebels to fight Chen Yun Bao Li Hsien-nien (Yao Jianfu)",
     "htmlid": "part8",
@@ -612,17 +612,17 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "9",
+    "subchapter": "10",
     "chaptertitle": "二 忍與不忍的權衡標準",
     "chaptertitleenglish": "Two endure and bear weigh standard",
-    "htmlid": "start9",
+    "htmlid": "part9",
     "indent": "1",
     "rowNumber": 62
   },
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "10",
+    "subchapter": "11",
     "chaptertitle": "周恩來至死都放不下的心事",
     "chaptertitleenglish": "Zhou Enlai's death does not fit in the mind",
     "htmlid": "part10",
@@ -632,7 +632,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "11",
+    "subchapter": "12",
     "chaptertitle": "“伍豪事件”——周恩來頭上的緊箍咒",
     "chaptertitleenglish": "\"Wu Hao event\" - the head of Zhou Enlai inhibition",
     "htmlid": "part11",
@@ -642,7 +642,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "12",
+    "subchapter": "13",
     "chaptertitle": "周、毛之間最大的過節",
     "chaptertitleenglish": "Among the biggest holiday weeks, wool",
     "htmlid": "part12",
@@ -652,7 +652,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "13",
+    "subchapter": "14",
     "chaptertitle": "毛澤東悄悄佔據頭把交椅",
     "chaptertitleenglish": "Mao quietly occupy the top spot",
     "htmlid": "part13",
@@ -662,7 +662,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "14",
+    "subchapter": "15",
     "chaptertitle": "延安整風整服了周恩來",
     "chaptertitleenglish": "Zhou Enlai served whole Yan'an Rectification",
     "htmlid": "part14",
@@ -672,7 +672,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "15",
+    "subchapter": "16",
     "chaptertitle": "“反冒進”，周受到嚴厲警告",
     "chaptertitleenglish": "\"Rash advance\", Zhou was severely warned",
     "htmlid": "part15",
@@ -682,7 +682,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "16",
+    "subchapter": "17",
     "chaptertitle": "“馴順，馴服，就是沒骨頭嘛！”",
     "chaptertitleenglish": "\"Tame, tame, is not bone it!\"",
     "htmlid": "part16",
@@ -692,7 +692,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "17",
+    "subchapter": "18",
     "chaptertitle": "老帥怒斥“文革”，總理見風使舵",
     "chaptertitleenglish": "Coach rebuked the \"Cultural Revolution\", the Prime Minister jumped on the bandwagon",
     "htmlid": "part17",
@@ -702,7 +702,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "18",
+    "subchapter": "19",
     "chaptertitle": "鄧敢拂聖意，周不做諍臣",
     "chaptertitleenglish": "Deng dare whisk holy, Zheng Chen Zhou do",
     "htmlid": "part18",
@@ -712,7 +712,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "19",
+    "subchapter": "20",
     "chaptertitle": "周的兩次微弱的反抗",
     "chaptertitleenglish": "Two weeks of weak resistance",
     "htmlid": "part19",
@@ -722,7 +722,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "20",
+    "subchapter": "21",
     "chaptertitle": "評古書也能觸動周恩來神經",
     "chaptertitleenglish": "Comments ancient Zhou Enlai also touched nerves",
     "htmlid": "part20",
@@ -732,7 +732,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "21",
+    "subchapter": "22",
     "chaptertitle": "跋扈毛夫人，總理變家臣",
     "chaptertitleenglish": "Madame Mao domineering, becomes prime minister retainers",
     "htmlid": "part21",
@@ -742,7 +742,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "22",
+    "subchapter": "23",
     "chaptertitle": "大義滅親表忠心",
     "chaptertitleenglish": "Severing table loyal",
     "htmlid": "part22",
@@ -752,7 +752,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "23",
+    "subchapter": "24",
     "chaptertitle": "忠君一生換不到一刻哀榮",
     "chaptertitleenglish": "Less than a minute to change a lifetime of loyalty sorrow Wing",
     "htmlid": "part23",
@@ -762,7 +762,7 @@
   {
     "book": "2",
     "chapter": "2",
-    "subchapter": "24",
+    "subchapter": "25",
     "chaptertitle": "周恩來“相忍”為了誰？",
     "chaptertitleenglish": "Zhou Enlai \"relative tolerance\" for whom?",
     "htmlid": "part24",
@@ -782,7 +782,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "0",
+    "subchapter": "1",
     "chaptertitle": "一  禁不住的真相",
     "chaptertitleenglish": "One can not help the truth",
     "htmlid": "start0",
@@ -792,7 +792,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "1",
+    "subchapter": "2",
     "chaptertitle": "“六四”槍聲與《晚年周恩來》",
     "chaptertitleenglish": "\"64\" shots and \"old age Zhou Enlai\"",
     "htmlid": "part1",
@@ -802,7 +802,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "2",
+    "subchapter": "3",
     "chaptertitle": "御醫出書顛覆領袖形象",
     "chaptertitleenglish": "Physician leaders to subvert the image of a book",
     "htmlid": "part2",
@@ -812,7 +812,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "3",
+    "subchapter": "4",
     "chaptertitle": "禁書的力量：真相全面呈現",
     "chaptertitleenglish": "Power banned books: Truth comprehensive presentation",
     "htmlid": "part3",
@@ -822,7 +822,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "4",
+    "subchapter": "5",
     "chaptertitle": "昨日禁人言，今日言被禁",
     "chaptertitleenglish": "Hide ban yesterday, today banned words",
     "htmlid": "part4",
@@ -832,7 +832,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "5",
+    "subchapter": "6",
     "chaptertitle": "真相無脛而走，高官私下爭閱",
     "chaptertitleenglish": "Truth without shin and go, officials contend privately reading",
     "htmlid": "part5",
@@ -842,7 +842,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "6",
+    "subchapter": "7",
     "chaptertitle": "禁書犯禁忌，當局最憂“解構力”",
     "chaptertitleenglish": "Banned guilty of taboo, the most concerned authorities \"deconstruction force\"",
     "htmlid": "part6",
@@ -852,7 +852,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "7",
+    "subchapter": "8",
     "chaptertitle": "專制一脈相承，禁言法寶傳遞",
     "chaptertitleenglish": "Authoritarian strain, gag magic transfer",
     "htmlid": "part7",
@@ -862,7 +862,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "8",
+    "subchapter": "9",
     "chaptertitle": "煌煌國家大法，孱孱個人權利",
     "chaptertitleenglish": "Huang Huang National Dafa, weak coward individual rights",
     "htmlid": "part8",
@@ -872,7 +872,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "9",
+    "subchapter": "10",
     "chaptertitle": "香港，禁書的樂園",
     "chaptertitleenglish": "Hong Kong banned the park",
     "htmlid": "part9",
@@ -882,7 +882,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "10",
+    "subchapter": "11",
     "chaptertitle": "查禁書無遠弗屆，多管道步步緊逼",
     "chaptertitleenglish": "Banned books far and wide, multi-channel step by step",
     "htmlid": "part10",
@@ -892,7 +892,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "11",
+    "subchapter": "12",
     "chaptertitle": "專政機器下的暴力與恐嚇",
     "chaptertitleenglish": "Violence and intimidation under the dictatorship of the machine",
     "htmlid": "part11",
@@ -902,7 +902,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "12",
+    "subchapter": "13",
     "chaptertitle": "無所不在的神秘力量",
     "chaptertitleenglish": "Ubiquitous mysterious force",
     "htmlid": "part12",
@@ -912,7 +912,7 @@
   {
     "book": "3",
     "chapter": "1",
-    "subchapter": "13",
+    "subchapter": "14",
     "chaptertitle": "高壓尚可抗，真情最難忍",
     "chaptertitleenglish": "High pressure still anti, most unbearable truth",
     "htmlid": "part13",
@@ -922,7 +922,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "14",
+    "subchapter": "15",
     "chaptertitle": "二 禁書逸聞軼事",
     "chaptertitleenglish": "Two banned anecdotal anecdote",
     "htmlid": "start14",
@@ -932,7 +932,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "15",
+    "subchapter": "16",
     "chaptertitle": "北京市長欺騙了鄧小平嗎？",
     "chaptertitleenglish": "Beijing Mayor Deng Xiaoping cheated it?",
     "htmlid": "part15",
@@ -942,7 +942,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "16",
+    "subchapter": "17",
     "chaptertitle": "《陳希同親述》的故事",
     "chaptertitleenglish": "\"Chen Xitong pro said,\" the story",
     "htmlid": "part16",
@@ -952,7 +952,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "17",
+    "subchapter": "18",
     "chaptertitle": "陳希同獄中收聽美國之音",
     "chaptertitleenglish": "Listen to the Voice of America Chen Xitong prison",
     "htmlid": "part17",
@@ -962,7 +962,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "18",
+    "subchapter": "19",
     "chaptertitle": "記者因言獲罪 報社刊文被封",
     "chaptertitleenglish": "Reporter newspaper published an article for speech crimes is closed",
     "htmlid": "part18",
@@ -972,7 +972,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "19",
+    "subchapter": "20",
     "chaptertitle": "《李鵬六四日記》引出的是是非非",
     "chaptertitleenglish": "\"Li sixty-four Diaries\" leads right and wrong",
     "htmlid": "part19",
@@ -982,7 +982,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "20",
+    "subchapter": "21",
     "chaptertitle": "趙紫陽是被軍事政變搞掉的嗎？",
     "chaptertitleenglish": "Zhao Ziyang was a military coup to get rid of it?",
     "htmlid": "part20",
@@ -992,7 +992,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "21",
+    "subchapter": "22",
     "chaptertitle": "禁書與盜版中國",
     "chaptertitleenglish": "China banned and piracy",
     "htmlid": "part21",
@@ -1002,7 +1002,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "22",
+    "subchapter": "23",
     "chaptertitle": "盜版禁書暢銷大陸各地",
     "chaptertitleenglish": "Piracy banned selling the rest of the continent",
     "htmlid": "part22",
@@ -1012,7 +1012,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "23",
+    "subchapter": "24",
     "chaptertitle": "滑稽嗎？作者樂見書被盜",
     "chaptertitleenglish": "Funny it? Author would like to see the book stolen",
     "htmlid": "part23",
@@ -1022,7 +1022,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "24",
+    "subchapter": "25",
     "chaptertitle": "民主台灣也禁書",
     "chaptertitleenglish": "Democratic Taiwan banned",
     "htmlid": "part24",
@@ -1032,7 +1032,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "25",
+    "subchapter": "26",
     "chaptertitle": "罪名何須有，笑話段子也遭禁",
     "chaptertitleenglish": "Why there are charges, joke scripts are banned",
     "htmlid": "part25",
@@ -1042,7 +1042,7 @@
   {
     "book": "3",
     "chapter": "2",
-    "subchapter": "26",
+    "subchapter": "27",
     "chaptertitle": "同病不相憐，莫言抵制戴晴不心軟",
     "chaptertitleenglish": "With the disease do not Xianglian, Mo Yan Dai Qing boycott does not soft-hearted",
     "htmlid": "part26",

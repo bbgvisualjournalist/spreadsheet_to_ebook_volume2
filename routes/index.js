@@ -44,14 +44,15 @@ router.get('/book/:bookNum/content.opf', function (req, res, next) {
             var photo_bookNumber = global.book.photos[i].book;
             photos_bookNumber_array.push(photo_bookNumber);
             photos_array.push(photo);
-        /*} else if (global.book.photos[i].book == 0) {
-    var photo = global.book.photos[i].filename;
-    var photo_bookNumber = global.book.photos[i].book;
-    photos_bookNumber_array.push(photo_bookNumber);
-    photos_array.push(photo);*/
-            //console.log(photo);
+        } else if (global.book.photos[i].book == 0) {
+            var photo = global.book.photos[i].filename;
+            var photo_bookNumber = global.book.photos[i].book;
+            photos_bookNumber_array.push(photo_bookNumber);
+            photos_array.push(photo);
+            
         }
     }
+    console.log(photos_array[0]);
     res.render('content', {
         book: bookNumber,
         photos: photos_array,
@@ -140,24 +141,6 @@ router.get('/book/:bookNum/toc.xhtml', function (req, res, next) {
 /* Display toc.ncx. */
 router.get('/book/:bookNum/toc.ncx', function (req, res, next) {
     var bookNumber = parseInt(req.params.bookNum);
-    var numberOfChapters = 0;
-    var numberOfSubchapters = 0;
-    var subchapter_array = [];
-    var currentSubchapter = 0;
-
-    for (var i = 0; i < global.book.chapters.length; i++) {
-        if (global.book.chapters[i].book - 1 == bookNumber) {
-            numberOfChapters++;
-        }
-        if (global.book.chapters[i].book - 1 == bookNumber) {
-            if (global.book.chapters[i].chapter == 0) {
-                currentSubchapter = parseInt(global.book.chapters[i].subchapter) + 1;
-            } else {
-                currentSubchapter = parseInt(global.book.chapters[i].subchapter) + 2;
-            }
-            subchapter_array.push(currentSubchapter);
-        }
-    }
     //edit this for exporting to epub so that paths match up
     //specifically for head.js with the CSS
     var mode = req.query.mode;
@@ -165,12 +148,32 @@ router.get('/book/:bookNum/toc.ncx', function (req, res, next) {
     if (mode == 'export') {
         pathMode = ''
     }
+
+    //Create a custom object for each book.
+    var currentBook = [];
+    //console.log('Isolating this book.')
+    for (var i = 0; i < global.book.chapters.length; i++) {
+        if (global.book.chapters[i].book - 1 == bookNumber) {
+            currentBook.push(global.book.chapters[i]);
+        }
+    }
+    //console.log(currentBook);
+
+    var playOrder = [];
+    for (var j = 0; j < currentBook.length; j++) {
+        playOrder.push(parseInt(currentBook[j].subchapter) + 3);
+    }
+    //console.log(playOrder);
+    //process.exit(0);
+
     res.render('tocncx', {
         book: bookNumber,
         pathPrefix: pathMode,
-        numberOfChapters: numberOfChapters,
+        currentBook: currentBook,
+        playOrder: playOrder
+        /*numberOfChapters: numberOfChapters,
         currentSubchapter: currentSubchapter,
-        subchapters: subchapter_array
+        subchapters: subchapter_array*/
     });
 });
 
@@ -232,7 +235,6 @@ router.get('/book/:bookNum/bodymatter.xhtml', function (req, res, next) {
     //split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
     //console.log('Splitting book into chapters.')
     //console.log(currentBook.length)
-    //error for book two happens between here and partials array!!!!!!!
     var currentChapter = 1;
     var chapters = [];
     var chapter = [];
@@ -316,11 +318,12 @@ router.get('/book/:bookNum/backmatter.xhtml', function (req, res, next) {
         }
     }
     //console.log('-------------')
-    //console.log(currentBook);
+    console.log(currentBook);
     //loop through all the objects in the current book array
     for (i = 0; i < currentBook.length; i++) {
         var this_book = global.book.chapters_meta[i].booknumber;
         var this_chapter = global.book.chapters_meta[i].chapternumber;
+        console.log(this_chapter);
         if (this_chapter == 0) {
             //set variables for the introduction to each book
             var endnotes = 'partials/content/book' + (this_book) + '/overviewBacknotes.ejs';

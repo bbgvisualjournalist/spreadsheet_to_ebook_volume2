@@ -1,27 +1,5 @@
 [
   {
-    "book": "0",
-    "chapter": "1",
-    "imagenumber": "1",
-    "filename": "鲍彤.jpg",
-    "cutline": "鮑彤",
-    "credit": "",
-    "alttext": "鮑彤",
-    "notes": "",
-    "rowNumber": 1
-  },
-  {
-    "book": "0",
-    "chapter": "1",
-    "imagenumber": "2",
-    "filename": "戴晴.jpg",
-    "cutline": "戴晴",
-    "credit": "",
-    "alttext": "戴晴",
-    "notes": "",
-    "rowNumber": 2
-  },
-  {
     "book": "1",
     "chapter": "0",
     "imagenumber": "0",
@@ -30,7 +8,7 @@
     "credit": "x",
     "alttext": "x",
     "notes": "",
-    "rowNumber": 3
+    "rowNumber": 1
   },
   {
     "book": "1",
@@ -41,7 +19,7 @@
     "credit": "(美國之音章明拍攝)",
     "alttext": "",
     "notes": "intro for book 1",
-    "rowNumber": 4
+    "rowNumber": 2
   },
   {
     "book": "1",
@@ -52,7 +30,7 @@
     "credit": "",
     "alttext": "",
     "notes": "intro for book 1",
-    "rowNumber": 5
+    "rowNumber": 3
   },
   {
     "book": "1",
@@ -63,7 +41,7 @@
     "credit": "",
     "alttext": "",
     "notes": "intro for book 1",
-    "rowNumber": 6
+    "rowNumber": 4
   },
   {
     "book": "1",
@@ -74,7 +52,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 7
+    "rowNumber": 5
   },
   {
     "book": "1",
@@ -85,7 +63,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 8
+    "rowNumber": 6
   },
   {
     "book": "1",
@@ -96,7 +74,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 9
+    "rowNumber": 7
   },
   {
     "book": "1",
@@ -107,7 +85,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 10
+    "rowNumber": 8
   },
   {
     "book": "1",
@@ -118,7 +96,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 11
+    "rowNumber": 9
   },
   {
     "book": "1",
@@ -129,7 +107,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 12
+    "rowNumber": 10
   },
   {
     "book": "1",
@@ -140,7 +118,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 13
+    "rowNumber": 11
   },
   {
     "book": "1",
@@ -151,7 +129,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 14
+    "rowNumber": 12
   },
   {
     "book": "1",
@@ -162,7 +140,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 15
+    "rowNumber": 13
   },
   {
     "book": "1",
@@ -173,7 +151,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 16
+    "rowNumber": 14
   },
   {
     "book": "1",
@@ -184,7 +162,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 17
+    "rowNumber": 15
   },
   {
     "book": "1",
@@ -195,7 +173,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 18
+    "rowNumber": 16
   },
   {
     "book": "1",
@@ -206,7 +184,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 19
+    "rowNumber": 17
   },
   {
     "book": "1",
@@ -217,7 +195,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 20
+    "rowNumber": 18
   },
   {
     "book": "1",
@@ -228,7 +206,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 21
+    "rowNumber": 19
   },
   {
     "book": "1",
@@ -239,7 +217,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 22
+    "rowNumber": 20
   },
   {
     "book": "1",
@@ -250,7 +228,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 23
+    "rowNumber": 21
   },
   {
     "book": "1",
@@ -261,7 +239,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 24
+    "rowNumber": 22
   },
   {
     "book": "1",
@@ -272,7 +250,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 25
+    "rowNumber": 23
   },
   {
     "book": "1",
@@ -283,7 +261,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 26
+    "rowNumber": 24
   },
   {
     "book": "1",
@@ -294,7 +272,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 27
+    "rowNumber": 25
   },
   {
     "book": "1",
@@ -305,7 +283,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 28
+    "rowNumber": 26
   },
   {
     "book": "1",
@@ -316,7 +294,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 29
+    "rowNumber": 27
   },
   {
     "book": "1",
@@ -327,7 +305,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 30
+    "rowNumber": 28
   },
   {
     "book": "1",
@@ -338,7 +316,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 31
+    "rowNumber": 29
   },
   {
     "book": "1",
@@ -349,7 +327,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 32
+    "rowNumber": 30
   },
   {
     "book": "1",
@@ -360,7 +338,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 33
+    "rowNumber": 31
   },
   {
     "book": "1",
@@ -371,7 +349,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 34
+    "rowNumber": 32
   },
   {
     "book": "1",
@@ -382,7 +360,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 35
+    "rowNumber": 33
   },
   {
     "book": "1",
@@ -393,7 +371,7 @@
     "credit": "(歷史照片)",
     "alttext": "",
     "notes": "",
-    "rowNumber": 36
+    "rowNumber": 34
   },
   {
     "book": "1",
@@ -404,7 +382,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 37
+    "rowNumber": 35
   },
   {
     "book": "1",
@@ -415,7 +393,7 @@
     "credit": "網路照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 38
+    "rowNumber": 36
   },
   {
     "book": "1",
@@ -426,7 +404,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 39
+    "rowNumber": 37
   },
   {
     "book": "1",
@@ -437,7 +415,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 40
+    "rowNumber": 38
   },
   {
     "book": "1",
@@ -448,7 +426,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 41
+    "rowNumber": 39
   },
   {
     "book": "1",
@@ -459,7 +437,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 42
+    "rowNumber": 40
   },
   {
     "book": "1",
@@ -470,7 +448,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 43
+    "rowNumber": 41
   },
   {
     "book": "1",
@@ -481,7 +459,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 44
+    "rowNumber": 42
   },
   {
     "book": "1",
@@ -492,7 +470,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 45
+    "rowNumber": 43
   },
   {
     "book": "1",
@@ -503,7 +481,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 46
+    "rowNumber": 44
   },
   {
     "book": "1",
@@ -514,7 +492,7 @@
     "credit": "美國之音 章明拍攝",
     "alttext": "",
     "notes": "",
-    "rowNumber": 47
+    "rowNumber": 45
   },
   {
     "book": "1",
@@ -525,7 +503,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 48
+    "rowNumber": 46
   },
   {
     "book": "1",
@@ -536,7 +514,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 49
+    "rowNumber": 47
   },
   {
     "book": "1",
@@ -547,7 +525,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 50
+    "rowNumber": 48
   },
   {
     "book": "1",
@@ -558,7 +536,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 51
+    "rowNumber": 49
   },
   {
     "book": "1",
@@ -569,7 +547,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 52
+    "rowNumber": 50
   },
   {
     "book": "1",
@@ -580,7 +558,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 53
+    "rowNumber": 51
   },
   {
     "book": "1",
@@ -591,7 +569,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 54
+    "rowNumber": 52
   },
   {
     "book": "1",
@@ -602,7 +580,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 55
+    "rowNumber": 53
   },
   {
     "book": "1",
@@ -613,7 +591,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 56
+    "rowNumber": 54
   },
   {
     "book": "1",
@@ -624,7 +602,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 57
+    "rowNumber": 55
   },
   {
     "book": "1",
@@ -635,7 +613,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 58
+    "rowNumber": 56
   },
   {
     "book": "1",
@@ -646,7 +624,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 59
+    "rowNumber": 57
   },
   {
     "book": "1",
@@ -657,7 +635,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 60
+    "rowNumber": 58
   },
   {
     "book": "1",
@@ -668,7 +646,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 61
+    "rowNumber": 59
   },
   {
     "book": "1",
@@ -679,7 +657,7 @@
     "credit": "",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 62
+    "rowNumber": 60
   },
   {
     "book": "1",
@@ -690,7 +668,7 @@
     "credit": "",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 63
+    "rowNumber": 61
   },
   {
     "book": "1",
@@ -701,7 +679,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 64
+    "rowNumber": 62
   },
   {
     "book": "1",
@@ -712,7 +690,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 65
+    "rowNumber": 63
   },
   {
     "book": "1",
@@ -723,7 +701,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 66
+    "rowNumber": 64
   },
   {
     "book": "1",
@@ -734,7 +712,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 67
+    "rowNumber": 65
   },
   {
     "book": "1",
@@ -745,7 +723,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 68
+    "rowNumber": 66
   },
   {
     "book": "1",
@@ -756,7 +734,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 69
+    "rowNumber": 67
   },
   {
     "book": "1",
@@ -767,7 +745,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 70
+    "rowNumber": 68
   },
   {
     "book": "1",
@@ -778,7 +756,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 71
+    "rowNumber": 69
   },
   {
     "book": "1",
@@ -789,7 +767,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 72
+    "rowNumber": 70
   },
   {
     "book": "1",
@@ -800,7 +778,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 73
+    "rowNumber": 71
   },
   {
     "book": "1",
@@ -811,7 +789,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 74
+    "rowNumber": 72
   },
   {
     "book": "1",
@@ -822,7 +800,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 75
+    "rowNumber": 73
   },
   {
     "book": "1",
@@ -833,7 +811,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 76
+    "rowNumber": 74
   },
   {
     "book": "1",
@@ -844,7 +822,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 77
+    "rowNumber": 75
   },
   {
     "book": "1",
@@ -855,7 +833,7 @@
     "credit": "",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 78
+    "rowNumber": 76
   },
   {
     "book": "2",
@@ -866,7 +844,7 @@
     "credit": "x",
     "alttext": "x",
     "notes": "",
-    "rowNumber": 79
+    "rowNumber": 77
   },
   {
     "book": "2",
@@ -877,7 +855,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 80
+    "rowNumber": 78
   },
   {
     "book": "2",
@@ -888,29 +866,29 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 81
+    "rowNumber": 79
   },
   {
     "book": "2",
     "chapter": "1",
     "imagenumber": "1",
-    "filename": "1_1_刘少奇之死.png",
+    "filename": "1_1_刘少奇之死.jpg",
     "cutline": "劉少奇在河南去世",
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 82
+    "rowNumber": 80
   },
   {
     "book": "2",
     "chapter": "1",
     "imagenumber": "2",
-    "filename": "1_2_中央文件刘少奇审查报告.png",
+    "filename": "1_2_中央文件刘少奇审查报告.jpg",
     "cutline": "中共中央關於劉少奇審查報告的文件",
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 83
+    "rowNumber": 81
   },
   {
     "book": "2",
@@ -921,7 +899,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 84
+    "rowNumber": 82
   },
   {
     "book": "2",
@@ -932,7 +910,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 85
+    "rowNumber": 83
   },
   {
     "book": "2",
@@ -943,7 +921,7 @@
     "credit": "",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 86
+    "rowNumber": 84
   },
   {
     "book": "2",
@@ -954,18 +932,18 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 87
+    "rowNumber": 85
   },
   {
     "book": "2",
     "chapter": "1",
     "imagenumber": "7",
-    "filename": "1_7_周與林在文革中.png",
+    "filename": "1_7_周與林在文革中.jpg",
     "cutline": "周恩來與林彪在“文革”中",
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 88
+    "rowNumber": 86
   },
   {
     "book": "2",
@@ -976,7 +954,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 89
+    "rowNumber": 87
   },
   {
     "book": "2",
@@ -987,7 +965,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 90
+    "rowNumber": 88
   },
   {
     "book": "2",
@@ -998,7 +976,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 91
+    "rowNumber": 89
   },
   {
     "book": "2",
@@ -1009,7 +987,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 92
+    "rowNumber": 90
   },
   {
     "book": "2",
@@ -1020,7 +998,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 93
+    "rowNumber": 91
   },
   {
     "book": "2",
@@ -1031,7 +1009,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 94
+    "rowNumber": 92
   },
   {
     "book": "2",
@@ -1042,7 +1020,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 95
+    "rowNumber": 93
   },
   {
     "book": "2",
@@ -1053,7 +1031,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 96
+    "rowNumber": 94
   },
   {
     "book": "2",
@@ -1064,7 +1042,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 97
+    "rowNumber": 95
   },
   {
     "book": "2",
@@ -1075,18 +1053,18 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 98
+    "rowNumber": 96
   },
   {
     "book": "2",
     "chapter": "1",
     "imagenumber": "18",
-    "filename": "1_18_毛对陈毅不要剪除 .png",
+    "filename": "1_18_毛对陈毅不要剪除.jpg",
     "cutline": "陳毅與毛澤東",
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 99
+    "rowNumber": 97
   },
   {
     "book": "2",
@@ -1097,7 +1075,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 100
+    "rowNumber": 98
   },
   {
     "book": "2",
@@ -1108,7 +1086,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 101
+    "rowNumber": 99
   },
   {
     "book": "2",
@@ -1119,7 +1097,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 102
+    "rowNumber": 100
   },
   {
     "book": "2",
@@ -1130,7 +1108,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 103
+    "rowNumber": 101
   },
   {
     "book": "2",
@@ -1141,7 +1119,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 104
+    "rowNumber": 102
   },
   {
     "book": "2",
@@ -1152,7 +1130,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 105
+    "rowNumber": 103
   },
   {
     "book": "2",
@@ -1163,7 +1141,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 106
+    "rowNumber": 104
   },
   {
     "book": "2",
@@ -1174,7 +1152,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 107
+    "rowNumber": 105
   },
   {
     "book": "2",
@@ -1185,7 +1163,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 108
+    "rowNumber": 106
   },
   {
     "book": "2",
@@ -1196,7 +1174,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 109
+    "rowNumber": 107
   },
   {
     "book": "2",
@@ -1207,7 +1185,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 110
+    "rowNumber": 108
   },
   {
     "book": "2",
@@ -1218,7 +1196,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 111
+    "rowNumber": 109
   },
   {
     "book": "2",
@@ -1229,7 +1207,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 112
+    "rowNumber": 110
   },
   {
     "book": "2",
@@ -1240,7 +1218,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 113
+    "rowNumber": 111
   },
   {
     "book": "2",
@@ -1251,7 +1229,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 114
+    "rowNumber": 112
   },
   {
     "book": "2",
@@ -1262,7 +1240,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 115
+    "rowNumber": 113
   },
   {
     "book": "2",
@@ -1273,7 +1251,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 116
+    "rowNumber": 114
   },
   {
     "book": "2",
@@ -1284,7 +1262,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "MISSING FILE!                            IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 117
+    "rowNumber": 115
   },
   {
     "book": "2",
@@ -1295,7 +1273,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 118
+    "rowNumber": 116
   },
   {
     "book": "3",
@@ -1306,7 +1284,7 @@
     "credit": "x",
     "alttext": "x",
     "notes": "",
-    "rowNumber": 119
+    "rowNumber": 117
   },
   {
     "book": "3",
@@ -1317,7 +1295,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 120
+    "rowNumber": 118
   },
   {
     "book": "3",
@@ -1328,7 +1306,7 @@
     "credit": "",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 121
+    "rowNumber": 119
   },
   {
     "book": "3",
@@ -1339,7 +1317,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 122
+    "rowNumber": 120
   },
   {
     "book": "3",
@@ -1350,7 +1328,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 123
+    "rowNumber": 121
   },
   {
     "book": "3",
@@ -1361,7 +1339,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 124
+    "rowNumber": 122
   },
   {
     "book": "3",
@@ -1372,7 +1350,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 125
+    "rowNumber": 123
   },
   {
     "book": "3",
@@ -1383,7 +1361,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 126
+    "rowNumber": 124
   },
   {
     "book": "3",
@@ -1394,7 +1372,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 127
+    "rowNumber": 125
   },
   {
     "book": "3",
@@ -1405,7 +1383,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 128
+    "rowNumber": 126
   },
   {
     "book": "3",
@@ -1416,7 +1394,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 129
+    "rowNumber": 127
   },
   {
     "book": "3",
@@ -1427,7 +1405,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 130
+    "rowNumber": 128
   },
   {
     "book": "3",
@@ -1438,7 +1416,7 @@
     "credit": "新世紀網站",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 131
+    "rowNumber": 129
   },
   {
     "book": "3",
@@ -1449,7 +1427,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 132
+    "rowNumber": 130
   },
   {
     "book": "3",
@@ -1460,7 +1438,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 133
+    "rowNumber": 131
   },
   {
     "book": "3",
@@ -1471,7 +1449,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 134
+    "rowNumber": 132
   },
   {
     "book": "3",
@@ -1482,7 +1460,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 135
+    "rowNumber": 133
   },
   {
     "book": "3",
@@ -1493,7 +1471,7 @@
     "credit": "戴晴提供",
     "alttext": "",
     "notes": "",
-    "rowNumber": 136
+    "rowNumber": 134
   },
   {
     "book": "3",
@@ -1504,7 +1482,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 137
+    "rowNumber": 135
   },
   {
     "book": "3",
@@ -1515,7 +1493,7 @@
     "credit": "美國之音",
     "alttext": "",
     "notes": "",
-    "rowNumber": 138
+    "rowNumber": 136
   },
   {
     "book": "3",
@@ -1526,7 +1504,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 139
+    "rowNumber": 137
   },
   {
     "book": "3",
@@ -1537,7 +1515,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 140
+    "rowNumber": 138
   },
   {
     "book": "3",
@@ -1548,7 +1526,7 @@
     "credit": "高文謙提供",
     "alttext": "",
     "notes": "",
-    "rowNumber": 141
+    "rowNumber": 139
   },
   {
     "book": "3",
@@ -1559,7 +1537,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 142
+    "rowNumber": 140
   },
   {
     "book": "3",
@@ -1570,7 +1548,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 143
+    "rowNumber": 141
   },
   {
     "book": "3",
@@ -1581,7 +1559,7 @@
     "credit": "",
     "alttext": "",
     "notes": "",
-    "rowNumber": 144
+    "rowNumber": 142
   },
   {
     "book": "3",
@@ -1592,7 +1570,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 145
+    "rowNumber": 143
   },
   {
     "book": "3",
@@ -1603,7 +1581,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 146
+    "rowNumber": 144
   },
   {
     "book": "3",
@@ -1614,7 +1592,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 147
+    "rowNumber": 145
   },
   {
     "book": "3",
@@ -1625,7 +1603,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 148
+    "rowNumber": 146
   },
   {
     "book": "3",
@@ -1636,7 +1614,7 @@
     "credit": "",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 149
+    "rowNumber": 147
   },
   {
     "book": "3",
@@ -1647,7 +1625,7 @@
     "credit": "",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 150
+    "rowNumber": 148
   },
   {
     "book": "3",
@@ -1658,7 +1636,7 @@
     "credit": "網絡照",
     "alttext": "",
     "notes": "IMAGE NOT IN PRINT BOOK: location in text uncertain",
-    "rowNumber": 151
+    "rowNumber": 149
   },
   {
     "book": "3",
@@ -1669,7 +1647,7 @@
     "credit": "高文謙提供",
     "alttext": "",
     "notes": "",
-    "rowNumber": 152
+    "rowNumber": 150
   },
   {
     "book": "3",
@@ -1680,7 +1658,7 @@
     "credit": "金鐘",
     "alttext": "",
     "notes": "",
-    "rowNumber": 153
+    "rowNumber": 151
   },
   {
     "book": "3",
@@ -1691,7 +1669,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 154
+    "rowNumber": 152
   },
   {
     "book": "3",
@@ -1702,7 +1680,7 @@
     "credit": "歷史照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 155
+    "rowNumber": 153
   },
   {
     "book": "3",
@@ -1713,7 +1691,7 @@
     "credit": "網絡照片",
     "alttext": "",
     "notes": "",
-    "rowNumber": 156
+    "rowNumber": 154
   },
   {
     "book": "3",
@@ -1724,7 +1702,7 @@
     "credit": "戴晴提供",
     "alttext": "",
     "notes": "",
-    "rowNumber": 157
+    "rowNumber": 155
   },
   {
     "book": "3",
@@ -1734,6 +1712,28 @@
     "cutline": "德國牧師馬丁·尼莫勒",
     "credit": "歷史照片",
     "alttext": "",
+    "notes": "",
+    "rowNumber": 156
+  },
+  {
+    "book": "0",
+    "chapter": "1",
+    "imagenumber": "1",
+    "filename": "鲍彤.jpg",
+    "cutline": "鮑彤",
+    "credit": "",
+    "alttext": "鮑彤",
+    "notes": "",
+    "rowNumber": 157
+  },
+  {
+    "book": "0",
+    "chapter": "1",
+    "imagenumber": "2",
+    "filename": "戴晴.jpg",
+    "cutline": "戴晴",
+    "credit": "",
+    "alttext": "戴晴",
     "notes": "",
     "rowNumber": 158
   }
