@@ -211,16 +211,17 @@ router.get('/book/:bookNum/bodymatter.xhtml', function (req, res, next) {
     var photos_array = [];
     var titles_array = [];
     var chapterID_array = [];
-    //edit this for exporting to epub so that paths match up
-    //specifically for head.js with the CSS
+    //EDIT THIS FOR EXPORTING TO EPUB SO THAT PATHS MATCH UP
+    //SPECIFICALLY FOR HEAD.JS WITH THE CSS
     var mode = req.query.mode;
     var pathMode = '../../';
     if (mode == 'export') {
         pathMode = ''
     }
-    //set variables for the introduction to each book
+    //SET VARIABLES FOR THE INTRODUCTION TO EACH BOOK
     var intro = "partials/content/book" + (bookNumber + 1) + "/overview.ejs";
-    //Create a custom object for each book.
+    
+    //CREATE A CUSTOM OBJECT FOR EACH BOOK.
     var currentBook = [];
     //console.log('Isolating book number ' + (bookNumber + 1))
     for (var i = 0; i < global.book.chapters.length; i++) {
@@ -232,7 +233,8 @@ router.get('/book/:bookNum/bodymatter.xhtml', function (req, res, next) {
     //console.log(currentBook);
     //console.log('-------------')
     //console.log('global.book.chapters.length: ' + global.book.chapters.length)
-    //split the book into a 'chapters' array of chapters. Each chapter has an array of subchapter objects.
+    
+    //SPLIT THE BOOK INTO A 'CHAPTERS' ARRAY OF CHAPTERS. EACH CHAPTER HAS AN ARRAY OF SUBCHAPTER OBJECTS.
     //console.log('Splitting book into chapters.')
     //console.log(currentBook.length)
     var currentChapter = 1;
@@ -256,7 +258,8 @@ router.get('/book/:bookNum/bodymatter.xhtml', function (req, res, next) {
     //console.log('-------------')
     //console.log(chapters);
     //console.log('-------------')
-    //loop through all the objects in the chapters array
+    
+    //LOOP THROUGH ALL THE OBJECTS IN THE CHAPTERS ARRAY
     for (i = 0; i < chapters.length; i++) {
         for (y = 0; y < chapters[i].length; y++) {
             //populate array of chapter titles
@@ -277,7 +280,8 @@ router.get('/book/:bookNum/bodymatter.xhtml', function (req, res, next) {
     //console.log('partials_array')
     //console.log(partials_array);
     //console.log(titles_array.length);
-    //create code snippets for each photo, alt tag, caption and credit.
+    
+    //CREATE CODE SNIPPETS FOR EACH PHOTO, ALT TAG, CAPTION AND CREDIT.
     for (var i = 0; i < global.book.photos.length; i++) {
         if (bookNumber + 1 == global.book.photos[i].book) {
             var photo = '<div class="img_fs_cap"><div><img src="' + pathMode + 'images/v2_' + (bookNumber + 1) + "/" + global.book.photos[i].filename + '" alt="' + global.book.photos[i].alttext + '" /></div><p class="caption">' + global.book.photos[i].cutline + ' ' + global.book.photos[i].credit + '</p></div>';
@@ -309,36 +313,49 @@ router.get('/book/:bookNum/backmatter.xhtml', function (req, res, next) {
     if (mode == 'export') {
         pathMode = ''
     }
-    //Create a custom object for each book.
+    
+    //SET VARIABLES FOR THE INTRO ENDNOTES
+    //var intro = "partials/content/book" + (bookNumber + 1) + "/overviewBacknotes.ejs";
+    //console.log(intro);
+    
+    //CREATE A CUSTOM OBJECT FOR EACH BOOK.
     var currentBook = [];
-    //console.log('Isolating book number ' + (bookNumber + 1));
+    var thisBookNo = 0;
+    console.log('Isolating book number ' + (bookNumber + 1));
+    
     for (var i = 0; i < global.book.chapters_meta.length; i++) {
-        if (global.book.chapters_meta[i].booknumber - 1 == bookNumber) {
+        thisBookNo = global.book.chapters_meta[i].booknumber;
+        if (thisBookNo - 1 == bookNumber) {
             currentBook.push(global.book.chapters_meta[i]);
         }
     }
-    //console.log('-------------')
-    console.log(currentBook);
-    //loop through all the objects in the current book array
+    //console.log('******************')
+    //console.log(currentBook);
+    //console.log('-------------');
+    //console.log('global.book.chapters.length: ' + global.book.chapters.length);
+    
+    //LOOP THROUGH ALL THE OBJECTS IN THE CURRENT BOOK ARRAY
     for (i = 0; i < currentBook.length; i++) {
-        var this_book = global.book.chapters_meta[i].booknumber;
-        var this_chapter = global.book.chapters_meta[i].chapternumber;
-        console.log(this_chapter);
+        //var this_book = parseInt(global.book.chapters_meta[i].booknumber);
+        var this_chapter = parseInt(global.book.chapters_meta[i].chapternumber);
+        //console.log(this_chapter);
         if (this_chapter == 0) {
             //set variables for the introduction to each book
-            var endnotes = 'partials/content/book' + (this_book) + '/overviewBacknotes.ejs';
+            var endnotes = 'partials/content/book' + (bookNumber + 1) + '/overviewBacknotes.ejs';
             endnotes_array.push(endnotes);
             thischapter_array.push(this_chapter);
         } else {
-            var endnotes = 'partials/content/book' + (this_book) + '/back' + (this_chapter) + '.ejs';
+            var endnotes = 'partials/content/book' + (bookNumber + 1) + '/back' + (this_chapter) + '.ejs';
             endnotes_array.push(endnotes);
             thischapter_array.push(this_chapter);
         }
     }
     //console.log('ENDNOTES ARRAY -------------');
     //console.log(endnotes_array);
-    //console.log('THIS CHAPTER ARRAY -------------');
+    //console.log('CHAPTER ARRAY -------------');
     //console.log(thischapter_array);
+
+     //process.exit(0);
     res.render('backmatter', {
         book: bookNumber,
         endnotes: endnotes_array,
@@ -346,4 +363,5 @@ router.get('/book/:bookNum/backmatter.xhtml', function (req, res, next) {
         pathPrefix: pathMode
     });
 });
+
 module.exports = router;

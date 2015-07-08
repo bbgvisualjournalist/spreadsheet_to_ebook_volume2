@@ -50,13 +50,17 @@ global.book.config = readJSONFile('./data/config.json');
 global.spreadsheet = spreadsheetURL;
 
 //Toggle for offline use; ignores Google spreadsheet request.
-var offlineMode=false;
-
+var offlineMode = false;
 
 //Add a timer to periodically update data for edits.
 //20000 = 20 seconds; 60000 = 1 minute ; 300000 = 5 minutes
 setInterval(fetchData, 60000);
-
+var currentdate = new Date(); 
+var datetime = currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1) + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + ('0'+currentdate.getMinutes()).slice(-2);
 
 //Load data from google spreadsheet and write it to the meta.json, photos.json and chapters.json files.
 function fetchData(){
@@ -64,8 +68,8 @@ function fetchData(){
 		var myData;
 		function onLoad(data, tabletop) {
 			//console.log(data);
+			console.log(datetime);
 			console.log("loading, updating and saving data from spreadsheet");
-
 			//
 			jf.writeFile("data/chapters.json", data.chapters.elements, function(err) {
 				global.book.chapters = readJSONFile('./data/chapters.json');

@@ -6,12 +6,12 @@
 </head>
 <body>
 	<div epub:type="backmatter" id="backmatter">
-        <!-- Add endnotes content -->
         <section epub:type="rearnotes" id="rearnotes">
+            <!-- Add all endnotes -->
             <% for (j=0; j < thischapter.length; j++){ %>
-            <%-  include(endnotes[j]); %>
-            <hr />
-            <% } %>w
+                <%-  include(endnotes[j]); %>
+                <hr />
+            <% } %>
         </section>
 
         <section epub:type="afterword" id="afterword">
